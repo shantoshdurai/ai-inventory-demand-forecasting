@@ -1,208 +1,423 @@
 import streamlit as st
-import sys
-import os
 
-# ─── Premium Page Config ───
 st.set_page_config(
-    page_title="StockSense AI — Smart Inventory Forecasting",
-    page_icon="🧠",
+    page_title="StockSense AI",
+    page_icon="◆",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
-# ─── Premium Custom CSS ───
+# ─── COMPLETE CSS REWRITE ───
 st.markdown("""
 <style>
-    /* ── Import Google Font ── */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
-    /* ── Global Styles ── */
+    /* ── Kill sidebar completely ── */
+    section[data-testid="stSidebar"] { display: none; }
+    [data-testid="collapsedControl"] { display: none; }
+
+    /* ── Global ── */
     html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Plus Jakarta Sans', -apple-system, sans-serif !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ── Background ── */
+    .stApp {
+        background: #0a0a0f;
     }
 
     /* ── Main container ── */
     .main .block-container {
-        padding-top: 2rem;
-        max-width: 1200px;
+        padding: 0 !important;
+        max-width: 100% !important;
     }
 
-    /* ── Sidebar ── */
-    section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
-        border-right: 1px solid rgba(255,255,255,0.05);
+    /* ── Hide chrome ── */
+    #MainMenu, footer, header { display: none !important; }
+    .stDeployButton { display: none !important; }
+
+    /* ── TOP NAV BAR via Streamlit columns ── */
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        padding: 16px 0;
+        margin-bottom: 8px;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
     }
-    section[data-testid="stSidebar"] .stSelectbox label {
-        color: #a5b4fc !important;
-        font-weight: 600;
-        letter-spacing: 0.5px;
+    .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-logo {
+        width: 32px;
+        height: 32px;
+        background: linear-gradient(135deg, #7c6ef0, #5b8af0);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: white;
+    }
+    .nav-name {
+        font-size: 17px;
+        font-weight: 700;
+        color: #f0eff5;
+        letter-spacing: -0.3px;
     }
 
-    /* ── Metric Cards ── */
-    div[data-testid="stMetric"] {
-        background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.1));
-        border: 1px solid rgba(139, 92, 246, 0.25);
-        border-radius: 16px;
-        padding: 20px 24px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Style the nav radio as pill buttons */
+    div[data-testid="stHorizontalBlock"]:has(.nav-radio) .stRadio > div {
+        flex-direction: row;
+        gap: 0;
     }
-    div[data-testid="stMetric"]:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 30px rgba(99, 102, 241, 0.25);
+    .nav-radio .stRadio > div[role="radiogroup"] {
+        background: rgba(255,255,255,0.04);
+        padding: 4px;
+        border-radius: 12px;
+        gap: 2px;
+        display: flex;
     }
-    div[data-testid="stMetric"] label {
-        color: #a5b4fc !important;
-        font-weight: 600;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-    div[data-testid="stMetric"] [data-testid="stMetricValue"] {
-        font-size: 2rem;
-        font-weight: 800;
-        background: linear-gradient(135deg, #818cf8, #c084fc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    /* ── Buttons ── */
-    .stButton > button {
-        background: linear-gradient(135deg, #6366f1, #8b5cf6) !important;
-        color: white !important;
-        border: none !important;
-        border-radius: 12px !important;
-        padding: 10px 28px !important;
-        font-weight: 600 !important;
-        letter-spacing: 0.5px !important;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3) !important;
-    }
-    .stButton > button:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5) !important;
-    }
-
-    /* ── Tabs ── */
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
-    }
-    .stTabs [data-baseweb="tab"] {
-        background: rgba(99, 102, 241, 0.08);
-        border-radius: 10px;
-        border: 1px solid rgba(99, 102, 241, 0.15);
-        padding: 10px 20px;
-        font-weight: 500;
+    .nav-radio .stRadio > div[role="radiogroup"] label {
+        padding: 8px 22px !important;
+        border-radius: 9px !important;
+        font-size: 13.5px !important;
+        font-weight: 500 !important;
+        color: rgba(240,238,250,0.55) !important;
+        cursor: pointer;
         transition: all 0.2s ease;
+        background: transparent;
+        border: none !important;
+        margin: 0 !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
     }
-    .stTabs [aria-selected="true"] {
-        background: linear-gradient(135deg, #6366f1, #8b5cf6) !important;
-        border-color: transparent !important;
+    .nav-radio .stRadio > div[role="radiogroup"] label:hover {
+        color: rgba(240,238,250,0.9) !important;
+        background: rgba(255,255,255,0.06);
+    }
+    .nav-radio .stRadio > div[role="radiogroup"] label[data-checked="true"],
+    .nav-radio .stRadio > div[role="radiogroup"] label:has(input:checked) {
+        color: #f0eff5 !important;
+        background: rgba(124, 110, 240, 0.25) !important;
+    }
+    /* Hide the radio circle */
+    .nav-radio .stRadio > div[role="radiogroup"] label > div:first-child {
+        display: none !important;
+    }
+    .nav-radio .stRadio > label { display: none !important; }
+
+    /* ── PAGE CONTAINER ── */
+    .page-wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 48px 80px 48px;
     }
 
-    /* ── DataFrames ── */
-    .stDataFrame {
-        border-radius: 12px;
-        overflow: hidden;
-    }
-
-    /* ── Info / Success / Warning / Error alerts ── */
-    .stAlert {
-        border-radius: 12px;
-        border-left-width: 4px;
-    }
-
-    /* ── Hero Header ── */
-    .hero-header {
-        text-align: center;
-        padding: 1.5rem 0 1rem 0;
-    }
-    .hero-header h1 {
-        font-size: 2.2rem;
+    /* ── HEADINGS — large, clear, Anthropic-style ── */
+    .page-title {
+        font-size: 36px;
         font-weight: 800;
-        background: linear-gradient(135deg, #818cf8, #c084fc, #f472b6);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 0.3rem;
+        color: #f0eff5;
+        letter-spacing: -1px;
+        line-height: 1.1;
+        margin-bottom: 8px;
     }
-    .hero-header p {
-        color: #94a3b8;
-        font-size: 1rem;
+    .page-desc {
+        font-size: 16px;
         font-weight: 400;
+        color: rgba(240, 238, 250, 0.5);
+        line-height: 1.5;
+        margin-bottom: 36px;
     }
 
-    /* ── Glassmorphism cards ── */
-    .glass-card {
-        background: rgba(30, 27, 75, 0.4);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(139, 92, 246, 0.2);
-        border-radius: 16px;
-        padding: 24px;
+    /* ── SECTION HEADERS ── */
+    .sh {
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(240, 238, 250, 0.35);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
         margin-bottom: 16px;
     }
-
-    /* ── Page section titles ── */
-    .section-title {
-        font-size: 1.4rem;
+    .sh2 {
+        font-size: 20px;
         font-weight: 700;
-        color: #e2e8f0;
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 2px solid rgba(99, 102, 241, 0.3);
+        color: #f0eff5;
+        letter-spacing: -0.3px;
+        margin-bottom: 20px;
     }
 
-    /* Hide Streamlit branding */
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
+    /* ── CARDS ── */
+    .card {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 16px;
+        padding: 24px 28px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        border-color: rgba(124, 110, 240, 0.15);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+    .card-stat-label {
+        font-size: 12px;
+        font-weight: 600;
+        color: rgba(240, 238, 250, 0.4);
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        margin-bottom: 8px;
+    }
+    .card-stat-value {
+        font-size: 32px;
+        font-weight: 700;
+        color: #f0eff5;
+        letter-spacing: -1px;
+        font-family: 'JetBrains Mono', monospace;
+    }
+    .card-stat-value.accent {
+        color: #7c6ef0;
+    }
+    .card-stat-value.green {
+        color: #4ade80;
+    }
+    .card-stat-value.amber {
+        color: #fbbf24;
+    }
+
+    /* ── GRID LAYOUTS ── */
+    .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    .grid-2-1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    .grid-1-2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    /* ── METRIC CARDS (streamlit native) ── */
+    div[data-testid="stMetric"] {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 16px;
+        padding: 24px 28px;
+        transition: border-color 0.3s ease;
+    }
+    div[data-testid="stMetric"]:hover {
+        border-color: rgba(124, 110, 240, 0.15);
+    }
+    div[data-testid="stMetric"] label {
+        color: rgba(240, 238, 250, 0.4) !important;
+        font-weight: 600 !important;
+        font-size: 12px !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.8px !important;
+    }
+    div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+        font-size: 28px !important;
+        font-weight: 700 !important;
+        color: #f0eff5 !important;
+        font-family: 'JetBrains Mono', monospace !important;
+        letter-spacing: -0.5px !important;
+    }
+
+    /* ── BUTTONS ── */
+    .stButton > button {
+        background: #7c6ef0 !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 10px !important;
+        padding: 10px 28px !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+        transition: all 0.2s ease !important;
+        box-shadow: 0 2px 12px rgba(124, 110, 240, 0.25) !important;
+    }
+    .stButton > button:hover {
+        background: #6b5ce0 !important;
+        transform: translateY(-1px) !important;
+        box-shadow: 0 6px 20px rgba(124, 110, 240, 0.35) !important;
+    }
+    .stButton > button:active {
+        transform: translateY(0) !important;
+    }
+
+    /* ── TABS ── */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 0;
+        background: rgba(255,255,255,0.03);
+        border-radius: 12px;
+        padding: 4px;
+        border: 1px solid rgba(255,255,255,0.06);
+        width: fit-content;
+    }
+    .stTabs [data-baseweb="tab"] {
+        border-radius: 9px;
+        padding: 10px 24px;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(240,238,250,0.5) !important;
+        background: transparent;
+        border: none !important;
+        transition: all 0.2s ease;
+    }
+    .stTabs [data-baseweb="tab"]:hover {
+        color: rgba(240,238,250,0.8) !important;
+    }
+    .stTabs [aria-selected="true"] {
+        background: #7c6ef0 !important;
+        color: white !important;
+        box-shadow: 0 2px 8px rgba(124, 110, 240, 0.3);
+    }
+    .stTabs [data-baseweb="tab-highlight"] { display: none; }
+    .stTabs [data-baseweb="tab-border"] { display: none; }
+
+    /* ── SELECT / INPUT ── */
+    .stSelectbox > div > div {
+        background: rgba(255,255,255,0.04) !important;
+        border: 1px solid rgba(255,255,255,0.08) !important;
+        border-radius: 10px !important;
+        color: #f0eff5 !important;
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+    }
+    .stSelectbox label, .stSlider label, .stRadio label, .stTextArea label {
+        color: rgba(240, 238, 250, 0.6) !important;
+        font-weight: 600 !important;
+        font-size: 13px !important;
+    }
+    .stTextArea textarea {
+        background: rgba(255,255,255,0.04) !important;
+        border: 1px solid rgba(255,255,255,0.08) !important;
+        border-radius: 10px !important;
+        color: #f0eff5 !important;
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+        font-size: 15px !important;
+    }
+    .stTextArea textarea:focus {
+        border-color: rgba(124, 110, 240, 0.4) !important;
+        box-shadow: 0 0 0 2px rgba(124, 110, 240, 0.1) !important;
+    }
+
+    /* ── SLIDER ── */
+    .stSlider [data-baseweb="slider"] [role="slider"] {
+        background: #7c6ef0 !important;
+        border: none !important;
+        width: 16px !important;
+        height: 16px !important;
+    }
+
+    /* ── FILE UPLOADER ── */
+    [data-testid="stFileUploader"] section {
+        border: 2px dashed rgba(255,255,255,0.1) !important;
+        border-radius: 12px !important;
+        background: rgba(255,255,255,0.02) !important;
+    }
+    [data-testid="stFileUploader"] section:hover {
+        border-color: rgba(124, 110, 240, 0.3) !important;
+    }
+
+    /* ── ALERTS ── */
+    .stAlert { border-radius: 12px !important; }
+
+    /* ── DATAFRAME ── */
+    .stDataFrame {
+        border-radius: 12px !important;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.06) !important;
+    }
+
+    /* ── HR ── */
+    hr { border-color: rgba(255,255,255,0.06) !important; }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.15); }
+
+    /* ── PLOTLY containers ── */
+    .stPlotlyChart { border-radius: 12px; overflow: hidden; }
+
+    @media (max-width: 768px) {
+        .topnav { padding: 12px 20px; }
+        .topnav-links { display: none; }
+        .page-wrap { padding: 24px 20px 60px 20px; }
+        .grid-4, .grid-3, .grid-2, .grid-2-1, .grid-1-2 {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
 """, unsafe_allow_html=True)
 
 
 def main():
-    # ── Sidebar ──
-    with st.sidebar:
+    # ── Top Navigation using Streamlit native controls ──
+    brand_col, nav_col = st.columns([1, 3])
+    
+    with brand_col:
         st.markdown("""
-        <div style="text-align:center; padding: 1rem 0;">
-            <div style="font-size:2.5rem;">🧠</div>
-            <h2 style="background: linear-gradient(135deg, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight:800; margin:0;">StockSense AI</h2>
-            <p style="color:#94a3b8; font-size:0.8rem; margin-top:4px;">Intelligent Inventory Forecasting</p>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        st.markdown("---")
-        
-        menu = ["📊 Dashboard", "📥 Input Data", "🔮 Forecast", "🎛️ What-If Simulator"]
-        choice = st.selectbox("Navigate", menu)
-        
-        st.markdown("---")
-        st.markdown("""
-        <div style="color:#64748b; font-size:0.75rem; text-align:center;">
-            <p>Built for <b>TNI26086</b> Hackathon</p>
-            <p>Powered by Gemini AI + XGBoost</p>
+        <div class="nav-brand">
+            <div class="nav-logo">◆</div>
+            <div class="nav-name">StockSense</div>
         </div>
         """, unsafe_allow_html=True)
     
-    # ── Hero Header ──
-    st.markdown("""
-    <div class="hero-header">
-        <h1>StockSense AI</h1>
-        <p>Smart Demand Forecasting for Small Businesses — Powered by Machine Learning & Gemini AI</p>
-    </div>
-    """, unsafe_allow_html=True)
+    with nav_col:
+        st.markdown('<div class="nav-radio">', unsafe_allow_html=True)
+        page = st.radio(
+            "nav",
+            ["Dashboard", "Input", "Forecast", "Simulator"],
+            horizontal=True,
+            label_visibility="collapsed"
+        )
+        st.markdown('</div>', unsafe_allow_html=True)
+    
+    st.markdown('<div style="border-bottom:1px solid rgba(255,255,255,0.06); margin-bottom:24px;"></div>', unsafe_allow_html=True)
 
-    if "Dashboard" in choice:
+    # ── Page Content ──
+    st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
+    
+    if page == "Dashboard":
         from ui.dashboard import render_dashboard
         render_dashboard()
-    elif "Input" in choice:
+    elif page == "Input":
         from ui.input_page import render_input_page
         render_input_page()
-    elif "Forecast" in choice:
+    elif page == "Forecast":
         from ui.forecast_page import render_forecast_page
         render_forecast_page()
-    elif "What-If" in choice:
+    elif page == "Simulator":
         from ui.whatif_page import render_whatif_page
         render_whatif_page()
+    
+    st.markdown('</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
+
