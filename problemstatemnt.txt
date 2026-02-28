@@ -1,0 +1,33 @@
+TNI26086- Inventory costs are high due to inaccurate forecasting, leading to both stockouts and excessive holding costs. Solution: Develop a robust Machine Learning model for Inventory Forecasting that predicts demand using historical sales data, seasonality, and external factors like promotions.
+Venue- (KIT - Kalaignar Karunanidhi Institute of Technology)-Event Date: 14-03-2026
+
+Problem context
+Rule-of-thumb or spreadsheet forecasts often ignore seasonality, promotions, and local demand patterns, so planners either overcompensate with high safety stock or suffer frequent stockouts. This raises working capital, markdowns, and lost-sales risk, especially for multi-SKU, multi-channel businesses where manual forecasting cannot keep up with complexity.​
+
+Core solution concept
+The solution is a supervised ML forecasting engine that predicts future demand for each SKU (or SKU–location) using historical sales, calendar effects (seasonality, holidays), and external drivers such as promotions, price changes, and events. The model output feeds replenishment logic (e.g., reorder points, order quantities) so inventory levels are continuously aligned with expected demand.​
+
+Data and modeling approach
+Inputs:
+
+Historical sales by SKU, location, and time (daily/weekly), with returns and out-of-stock flags.
+
+Calendars: weekdays vs weekends, holidays, seasonal periods.
+
+Business drivers: promotions, price changes, marketing campaigns, product launches, and possibly weather or macro indicators where relevant.​
+
+Models:
+
+Time-series and ML hybrids (e.g., ARIMA or exponential smoothing plus ML models like Random Forests, Gradient Boosting, or LSTMs) to capture trends, seasonality, and nonlinear effects of promotions.​
+
+Hierarchical forecasting (SKU → category → total) and by location/channel to stabilize estimates for sparse or new items.​
+
+System and process requirements
+Automated pipelines to clean and aggregate data, engineer features (lags, rolling averages, promo flags), train models, and evaluate accuracy (e.g., MAPE, RMSE) on a rolling basis.​
+
+Forecast outputs integrated into planning systems, with configurable service-level targets and safety-stock rules that turn forecasts into concrete replenishment recommendations.​
+
+Planners’ workbench for overrides and “what-if” analysis (e.g., changing promo intensity) and clear explanation of key forecast drivers to build trust.
+
+Expected outcome
+The expected outcome is more accurate and granular demand forecasts, reducing forecast error and enabling lower average inventory for the same (or better) service levels. Businesses can cut stockouts and emergency orders, shrink holding and obsolescence costs, and respond faster to demand shifts, improving both customer satisfaction and profitability.

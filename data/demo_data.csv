@@ -1,0 +1,1617 @@
+item,category,price,qty,type,date,source
+Dolo 650,Fever,30,450,initial,2025-09-02,demo_script
+Crocin Advance,Fever,25,240,initial,2025-09-02,demo_script
+Amoxicillin 500mg,Antibiotic,85,150,initial,2025-09-02,demo_script
+Volini Spray,Pain Relief,120,90,initial,2025-09-02,demo_script
+Digene Tablets,Digestion,20,300,initial,2025-09-02,demo_script
+Cetirizine,Allergy,15,360,initial,2025-09-02,demo_script
+Vicks VapoRub,Cold,45,120,initial,2025-09-02,demo_script
+Band-Aid,First Aid,5,600,initial,2025-09-02,demo_script
+Dolo 650,Fever,30,14,sale,2025-09-02,demo_script
+Crocin Advance,Fever,25,6,sale,2025-09-02,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-09-02,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-02,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-09-02,demo_script
+Cetirizine,Allergy,15,12,sale,2025-09-02,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-09-02,demo_script
+Band-Aid,First Aid,5,25,sale,2025-09-02,demo_script
+Dolo 650,Fever,30,14,sale,2025-09-03,demo_script
+Crocin Advance,Fever,25,7,sale,2025-09-03,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-03,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-03,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-09-03,demo_script
+Cetirizine,Allergy,15,9,sale,2025-09-03,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-03,demo_script
+Band-Aid,First Aid,5,20,sale,2025-09-03,demo_script
+Dolo 650,Fever,30,13,sale,2025-09-04,demo_script
+Crocin Advance,Fever,25,10,sale,2025-09-04,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-09-04,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-04,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-09-04,demo_script
+Cetirizine,Allergy,15,12,sale,2025-09-04,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-09-04,demo_script
+Band-Aid,First Aid,5,15,sale,2025-09-04,demo_script
+Dolo 650,Fever,30,16,sale,2025-09-05,demo_script
+Crocin Advance,Fever,25,5,sale,2025-09-05,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-09-05,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-05,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-09-05,demo_script
+Cetirizine,Allergy,15,14,sale,2025-09-05,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-09-05,demo_script
+Band-Aid,First Aid,5,20,sale,2025-09-05,demo_script
+Dolo 650,Fever,30,14,sale,2025-09-06,demo_script
+Crocin Advance,Fever,25,13,sale,2025-09-06,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-06,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-06,demo_script
+Digene Tablets,Digestion,20,14,sale,2025-09-06,demo_script
+Cetirizine,Allergy,15,13,sale,2025-09-06,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-06,demo_script
+Band-Aid,First Aid,5,21,sale,2025-09-06,demo_script
+Dolo 650,Fever,30,17,sale,2025-09-07,demo_script
+Crocin Advance,Fever,25,11,sale,2025-09-07,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-09-07,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-07,demo_script
+Digene Tablets,Digestion,20,13,sale,2025-09-07,demo_script
+Cetirizine,Allergy,15,19,sale,2025-09-07,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-07,demo_script
+Band-Aid,First Aid,5,19,sale,2025-09-07,demo_script
+Dolo 650,Fever,30,14,sale,2025-09-08,demo_script
+Crocin Advance,Fever,25,8,sale,2025-09-08,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-09-08,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-08,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-09-08,demo_script
+Cetirizine,Allergy,15,13,sale,2025-09-08,demo_script
+Vicks VapoRub,Cold,45,2,sale,2025-09-08,demo_script
+Band-Aid,First Aid,5,24,sale,2025-09-08,demo_script
+Dolo 650,Fever,30,17,sale,2025-09-09,demo_script
+Crocin Advance,Fever,25,10,sale,2025-09-09,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-09-09,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-09,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-09-09,demo_script
+Cetirizine,Allergy,15,12,sale,2025-09-09,demo_script
+Vicks VapoRub,Cold,45,2,sale,2025-09-09,demo_script
+Band-Aid,First Aid,5,14,sale,2025-09-09,demo_script
+Dolo 650,Fever,30,11,sale,2025-09-10,demo_script
+Crocin Advance,Fever,25,8,sale,2025-09-10,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-10,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-10,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-09-10,demo_script
+Cetirizine,Allergy,15,12,sale,2025-09-10,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-10,demo_script
+Band-Aid,First Aid,5,15,sale,2025-09-10,demo_script
+Dolo 650,Fever,30,13,sale,2025-09-11,demo_script
+Crocin Advance,Fever,25,10,sale,2025-09-11,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-11,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-11,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-09-11,demo_script
+Cetirizine,Allergy,15,12,sale,2025-09-11,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-09-11,demo_script
+Band-Aid,First Aid,5,17,sale,2025-09-11,demo_script
+Dolo 650,Fever,30,13,sale,2025-09-12,demo_script
+Crocin Advance,Fever,25,6,sale,2025-09-12,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-12,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-12,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-09-12,demo_script
+Cetirizine,Allergy,15,13,sale,2025-09-12,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-12,demo_script
+Band-Aid,First Aid,5,16,sale,2025-09-12,demo_script
+Dolo 650,Fever,30,20,sale,2025-09-13,demo_script
+Crocin Advance,Fever,25,12,sale,2025-09-13,demo_script
+Amoxicillin 500mg,Antibiotic,85,8,sale,2025-09-13,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-13,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-09-13,demo_script
+Cetirizine,Allergy,15,18,sale,2025-09-13,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-13,demo_script
+Band-Aid,First Aid,5,30,sale,2025-09-13,demo_script
+Dolo 650,Fever,30,18,sale,2025-09-14,demo_script
+Dolo 650,Fever,30,252,restock,2025-09-14,demo_script
+Crocin Advance,Fever,25,11,sale,2025-09-14,demo_script
+Crocin Advance,Fever,25,109,restock,2025-09-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,87,restock,2025-09-14,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-09-14,demo_script
+Volini Spray,Pain Relief,120,52,restock,2025-09-14,demo_script
+Digene Tablets,Digestion,20,16,sale,2025-09-14,demo_script
+Digene Tablets,Digestion,20,146,restock,2025-09-14,demo_script
+Cetirizine,Allergy,15,15,sale,2025-09-14,demo_script
+Cetirizine,Allergy,15,175,restock,2025-09-14,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-09-14,demo_script
+Vicks VapoRub,Cold,45,64,restock,2025-09-14,demo_script
+Band-Aid,First Aid,5,32,sale,2025-09-14,demo_script
+Band-Aid,First Aid,5,304,restock,2025-09-14,demo_script
+Dolo 650,Fever,30,13,sale,2025-09-15,demo_script
+Crocin Advance,Fever,25,8,sale,2025-09-15,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-09-15,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-15,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-09-15,demo_script
+Cetirizine,Allergy,15,10,sale,2025-09-15,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-15,demo_script
+Band-Aid,First Aid,5,17,sale,2025-09-15,demo_script
+Dolo 650,Fever,30,19,sale,2025-09-16,demo_script
+Crocin Advance,Fever,25,9,sale,2025-09-16,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-16,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-16,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-09-16,demo_script
+Cetirizine,Allergy,15,10,sale,2025-09-16,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-16,demo_script
+Band-Aid,First Aid,5,16,sale,2025-09-16,demo_script
+Dolo 650,Fever,30,14,sale,2025-09-17,demo_script
+Crocin Advance,Fever,25,9,sale,2025-09-17,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-17,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-17,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-09-17,demo_script
+Cetirizine,Allergy,15,13,sale,2025-09-17,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-09-17,demo_script
+Band-Aid,First Aid,5,16,sale,2025-09-17,demo_script
+Dolo 650,Fever,30,17,sale,2025-09-18,demo_script
+Crocin Advance,Fever,25,6,sale,2025-09-18,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2025-09-18,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-18,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-09-18,demo_script
+Cetirizine,Allergy,15,9,sale,2025-09-18,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-09-18,demo_script
+Band-Aid,First Aid,5,14,sale,2025-09-18,demo_script
+Dolo 650,Fever,30,17,sale,2025-09-19,demo_script
+Crocin Advance,Fever,25,6,sale,2025-09-19,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-19,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-19,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-09-19,demo_script
+Cetirizine,Allergy,15,10,sale,2025-09-19,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-19,demo_script
+Band-Aid,First Aid,5,22,sale,2025-09-19,demo_script
+Dolo 650,Fever,30,17,sale,2025-09-20,demo_script
+Crocin Advance,Fever,25,7,sale,2025-09-20,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-09-20,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-09-20,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-09-20,demo_script
+Cetirizine,Allergy,15,17,sale,2025-09-20,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-20,demo_script
+Band-Aid,First Aid,5,19,sale,2025-09-20,demo_script
+Dolo 650,Fever,30,22,sale,2025-09-21,demo_script
+Crocin Advance,Fever,25,11,sale,2025-09-21,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-09-21,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-09-21,demo_script
+Digene Tablets,Digestion,20,14,sale,2025-09-21,demo_script
+Cetirizine,Allergy,15,18,sale,2025-09-21,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-09-21,demo_script
+Band-Aid,First Aid,5,29,sale,2025-09-21,demo_script
+Dolo 650,Fever,30,17,sale,2025-09-22,demo_script
+Crocin Advance,Fever,25,7,sale,2025-09-22,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-22,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-22,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-09-22,demo_script
+Cetirizine,Allergy,15,14,sale,2025-09-22,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-22,demo_script
+Band-Aid,First Aid,5,23,sale,2025-09-22,demo_script
+Dolo 650,Fever,30,12,sale,2025-09-23,demo_script
+Crocin Advance,Fever,25,8,sale,2025-09-23,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-23,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-23,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-09-23,demo_script
+Cetirizine,Allergy,15,13,sale,2025-09-23,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-09-23,demo_script
+Band-Aid,First Aid,5,24,sale,2025-09-23,demo_script
+Dolo 650,Fever,30,18,sale,2025-09-24,demo_script
+Crocin Advance,Fever,25,8,sale,2025-09-24,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-24,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-24,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-09-24,demo_script
+Cetirizine,Allergy,15,9,sale,2025-09-24,demo_script
+Vicks VapoRub,Cold,45,2,sale,2025-09-24,demo_script
+Band-Aid,First Aid,5,15,sale,2025-09-24,demo_script
+Dolo 650,Fever,30,19,sale,2025-09-25,demo_script
+Crocin Advance,Fever,25,7,sale,2025-09-25,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-09-25,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-25,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-09-25,demo_script
+Cetirizine,Allergy,15,9,sale,2025-09-25,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-25,demo_script
+Band-Aid,First Aid,5,25,sale,2025-09-25,demo_script
+Dolo 650,Fever,30,18,sale,2025-09-26,demo_script
+Crocin Advance,Fever,25,6,sale,2025-09-26,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-09-26,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-26,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-09-26,demo_script
+Cetirizine,Allergy,15,13,sale,2025-09-26,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-09-26,demo_script
+Band-Aid,First Aid,5,23,sale,2025-09-26,demo_script
+Dolo 650,Fever,30,19,sale,2025-09-27,demo_script
+Crocin Advance,Fever,25,13,sale,2025-09-27,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-09-27,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-09-27,demo_script
+Digene Tablets,Digestion,20,14,sale,2025-09-27,demo_script
+Cetirizine,Allergy,15,10,sale,2025-09-27,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-09-27,demo_script
+Band-Aid,First Aid,5,27,sale,2025-09-27,demo_script
+Dolo 650,Fever,30,20,sale,2025-09-28,demo_script
+Dolo 650,Fever,30,252,restock,2025-09-28,demo_script
+Crocin Advance,Fever,25,7,sale,2025-09-28,demo_script
+Crocin Advance,Fever,25,123,restock,2025-09-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-09-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,89,restock,2025-09-28,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-09-28,demo_script
+Volini Spray,Pain Relief,120,44,restock,2025-09-28,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-09-28,demo_script
+Digene Tablets,Digestion,20,152,restock,2025-09-28,demo_script
+Cetirizine,Allergy,15,17,sale,2025-09-28,demo_script
+Cetirizine,Allergy,15,190,restock,2025-09-28,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-09-28,demo_script
+Vicks VapoRub,Cold,45,54,restock,2025-09-28,demo_script
+Band-Aid,First Aid,5,25,sale,2025-09-28,demo_script
+Band-Aid,First Aid,5,333,restock,2025-09-28,demo_script
+Dolo 650,Fever,30,11,sale,2025-09-29,demo_script
+Crocin Advance,Fever,25,9,sale,2025-09-29,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2025-09-29,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-09-29,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-09-29,demo_script
+Cetirizine,Allergy,15,12,sale,2025-09-29,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-09-29,demo_script
+Band-Aid,First Aid,5,22,sale,2025-09-29,demo_script
+Dolo 650,Fever,30,13,sale,2025-09-30,demo_script
+Crocin Advance,Fever,25,8,sale,2025-09-30,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-09-30,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-09-30,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-09-30,demo_script
+Cetirizine,Allergy,15,13,sale,2025-09-30,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-09-30,demo_script
+Band-Aid,First Aid,5,18,sale,2025-09-30,demo_script
+Dolo 650,Fever,30,12,sale,2025-10-01,demo_script
+Dolo 650,Fever,30,221,restock,2025-10-01,demo_script
+Crocin Advance,Fever,25,5,sale,2025-10-01,demo_script
+Crocin Advance,Fever,25,118,restock,2025-10-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,76,restock,2025-10-01,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-01,demo_script
+Volini Spray,Pain Relief,120,53,restock,2025-10-01,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-10-01,demo_script
+Digene Tablets,Digestion,20,159,restock,2025-10-01,demo_script
+Cetirizine,Allergy,15,11,sale,2025-10-01,demo_script
+Cetirizine,Allergy,15,163,restock,2025-10-01,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-01,demo_script
+Vicks VapoRub,Cold,45,54,restock,2025-10-01,demo_script
+Band-Aid,First Aid,5,24,sale,2025-10-01,demo_script
+Band-Aid,First Aid,5,315,restock,2025-10-01,demo_script
+Dolo 650,Fever,30,15,sale,2025-10-02,demo_script
+Crocin Advance,Fever,25,7,sale,2025-10-02,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-10-02,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-02,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-10-02,demo_script
+Cetirizine,Allergy,15,10,sale,2025-10-02,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-02,demo_script
+Band-Aid,First Aid,5,15,sale,2025-10-02,demo_script
+Dolo 650,Fever,30,17,sale,2025-10-03,demo_script
+Crocin Advance,Fever,25,7,sale,2025-10-03,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-03,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-03,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-10-03,demo_script
+Cetirizine,Allergy,15,11,sale,2025-10-03,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-03,demo_script
+Band-Aid,First Aid,5,15,sale,2025-10-03,demo_script
+Dolo 650,Fever,30,18,sale,2025-10-04,demo_script
+Crocin Advance,Fever,25,8,sale,2025-10-04,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-10-04,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-10-04,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-10-04,demo_script
+Cetirizine,Allergy,15,12,sale,2025-10-04,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-10-04,demo_script
+Band-Aid,First Aid,5,20,sale,2025-10-04,demo_script
+Dolo 650,Fever,30,24,sale,2025-10-05,demo_script
+Crocin Advance,Fever,25,11,sale,2025-10-05,demo_script
+Amoxicillin 500mg,Antibiotic,85,8,sale,2025-10-05,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-05,demo_script
+Digene Tablets,Digestion,20,13,sale,2025-10-05,demo_script
+Cetirizine,Allergy,15,14,sale,2025-10-05,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-10-05,demo_script
+Band-Aid,First Aid,5,19,sale,2025-10-05,demo_script
+Dolo 650,Fever,30,15,sale,2025-10-06,demo_script
+Crocin Advance,Fever,25,7,sale,2025-10-06,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-06,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-06,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-10-06,demo_script
+Cetirizine,Allergy,15,14,sale,2025-10-06,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-10-06,demo_script
+Band-Aid,First Aid,5,18,sale,2025-10-06,demo_script
+Dolo 650,Fever,30,16,sale,2025-10-07,demo_script
+Crocin Advance,Fever,25,6,sale,2025-10-07,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-10-07,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-07,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-10-07,demo_script
+Cetirizine,Allergy,15,14,sale,2025-10-07,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-10-07,demo_script
+Band-Aid,First Aid,5,16,sale,2025-10-07,demo_script
+Dolo 650,Fever,30,14,sale,2025-10-08,demo_script
+Crocin Advance,Fever,25,9,sale,2025-10-08,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-08,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-08,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-10-08,demo_script
+Cetirizine,Allergy,15,10,sale,2025-10-08,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-10-08,demo_script
+Band-Aid,First Aid,5,22,sale,2025-10-08,demo_script
+Dolo 650,Fever,30,12,sale,2025-10-09,demo_script
+Crocin Advance,Fever,25,8,sale,2025-10-09,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-09,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-09,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-10-09,demo_script
+Cetirizine,Allergy,15,8,sale,2025-10-09,demo_script
+Vicks VapoRub,Cold,45,2,sale,2025-10-09,demo_script
+Band-Aid,First Aid,5,22,sale,2025-10-09,demo_script
+Dolo 650,Fever,30,10,sale,2025-10-10,demo_script
+Crocin Advance,Fever,25,6,sale,2025-10-10,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-10-10,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-10,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-10-10,demo_script
+Cetirizine,Allergy,15,12,sale,2025-10-10,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-10,demo_script
+Band-Aid,First Aid,5,15,sale,2025-10-10,demo_script
+Dolo 650,Fever,30,22,sale,2025-10-11,demo_script
+Crocin Advance,Fever,25,11,sale,2025-10-11,demo_script
+Amoxicillin 500mg,Antibiotic,85,7,sale,2025-10-11,demo_script
+Volini Spray,Pain Relief,120,5,sale,2025-10-11,demo_script
+Digene Tablets,Digestion,20,16,sale,2025-10-11,demo_script
+Cetirizine,Allergy,15,10,sale,2025-10-11,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-10-11,demo_script
+Band-Aid,First Aid,5,27,sale,2025-10-11,demo_script
+Dolo 650,Fever,30,20,sale,2025-10-12,demo_script
+Crocin Advance,Fever,25,9,sale,2025-10-12,demo_script
+Amoxicillin 500mg,Antibiotic,85,7,sale,2025-10-12,demo_script
+Volini Spray,Pain Relief,120,5,sale,2025-10-12,demo_script
+Digene Tablets,Digestion,20,15,sale,2025-10-12,demo_script
+Cetirizine,Allergy,15,17,sale,2025-10-12,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-10-12,demo_script
+Band-Aid,First Aid,5,25,sale,2025-10-12,demo_script
+Dolo 650,Fever,30,12,sale,2025-10-13,demo_script
+Crocin Advance,Fever,25,10,sale,2025-10-13,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-13,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-13,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-10-13,demo_script
+Cetirizine,Allergy,15,12,sale,2025-10-13,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-10-13,demo_script
+Band-Aid,First Aid,5,18,sale,2025-10-13,demo_script
+Dolo 650,Fever,30,18,sale,2025-10-14,demo_script
+Dolo 650,Fever,30,214,restock,2025-10-14,demo_script
+Crocin Advance,Fever,25,7,sale,2025-10-14,demo_script
+Crocin Advance,Fever,25,128,restock,2025-10-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,84,restock,2025-10-14,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-14,demo_script
+Volini Spray,Pain Relief,120,41,restock,2025-10-14,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-10-14,demo_script
+Digene Tablets,Digestion,20,138,restock,2025-10-14,demo_script
+Cetirizine,Allergy,15,14,sale,2025-10-14,demo_script
+Cetirizine,Allergy,15,178,restock,2025-10-14,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-14,demo_script
+Vicks VapoRub,Cold,45,69,restock,2025-10-14,demo_script
+Band-Aid,First Aid,5,19,sale,2025-10-14,demo_script
+Band-Aid,First Aid,5,313,restock,2025-10-14,demo_script
+Dolo 650,Fever,30,14,sale,2025-10-15,demo_script
+Crocin Advance,Fever,25,7,sale,2025-10-15,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-10-15,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-15,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-10-15,demo_script
+Cetirizine,Allergy,15,14,sale,2025-10-15,demo_script
+Vicks VapoRub,Cold,45,2,sale,2025-10-15,demo_script
+Band-Aid,First Aid,5,22,sale,2025-10-15,demo_script
+Dolo 650,Fever,30,17,sale,2025-10-16,demo_script
+Crocin Advance,Fever,25,9,sale,2025-10-16,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-10-16,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-16,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-10-16,demo_script
+Cetirizine,Allergy,15,13,sale,2025-10-16,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-16,demo_script
+Band-Aid,First Aid,5,23,sale,2025-10-16,demo_script
+Dolo 650,Fever,30,19,sale,2025-10-17,demo_script
+Crocin Advance,Fever,25,7,sale,2025-10-17,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-10-17,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-17,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-10-17,demo_script
+Cetirizine,Allergy,15,11,sale,2025-10-17,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-17,demo_script
+Band-Aid,First Aid,5,22,sale,2025-10-17,demo_script
+Dolo 650,Fever,30,22,sale,2025-10-18,demo_script
+Crocin Advance,Fever,25,12,sale,2025-10-18,demo_script
+Amoxicillin 500mg,Antibiotic,85,7,sale,2025-10-18,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-18,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-10-18,demo_script
+Cetirizine,Allergy,15,19,sale,2025-10-18,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-10-18,demo_script
+Band-Aid,First Aid,5,22,sale,2025-10-18,demo_script
+Dolo 650,Fever,30,20,sale,2025-10-19,demo_script
+Crocin Advance,Fever,25,11,sale,2025-10-19,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-19,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-10-19,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-10-19,demo_script
+Cetirizine,Allergy,15,12,sale,2025-10-19,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-10-19,demo_script
+Band-Aid,First Aid,5,27,sale,2025-10-19,demo_script
+Dolo 650,Fever,30,18,sale,2025-10-20,demo_script
+Crocin Advance,Fever,25,9,sale,2025-10-20,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-10-20,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-20,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-10-20,demo_script
+Cetirizine,Allergy,15,9,sale,2025-10-20,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-20,demo_script
+Band-Aid,First Aid,5,14,sale,2025-10-20,demo_script
+Dolo 650,Fever,30,16,sale,2025-10-21,demo_script
+Crocin Advance,Fever,25,6,sale,2025-10-21,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-21,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-21,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-10-21,demo_script
+Cetirizine,Allergy,15,13,sale,2025-10-21,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-21,demo_script
+Band-Aid,First Aid,5,20,sale,2025-10-21,demo_script
+Dolo 650,Fever,30,14,sale,2025-10-22,demo_script
+Crocin Advance,Fever,25,6,sale,2025-10-22,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-10-22,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-22,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-10-22,demo_script
+Cetirizine,Allergy,15,15,sale,2025-10-22,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-22,demo_script
+Band-Aid,First Aid,5,20,sale,2025-10-22,demo_script
+Dolo 650,Fever,30,17,sale,2025-10-23,demo_script
+Crocin Advance,Fever,25,6,sale,2025-10-23,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-23,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-23,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-10-23,demo_script
+Cetirizine,Allergy,15,14,sale,2025-10-23,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-10-23,demo_script
+Band-Aid,First Aid,5,25,sale,2025-10-23,demo_script
+Dolo 650,Fever,30,18,sale,2025-10-24,demo_script
+Crocin Advance,Fever,25,9,sale,2025-10-24,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-24,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-24,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-10-24,demo_script
+Cetirizine,Allergy,15,12,sale,2025-10-24,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-10-24,demo_script
+Band-Aid,First Aid,5,14,sale,2025-10-24,demo_script
+Dolo 650,Fever,30,19,sale,2025-10-25,demo_script
+Crocin Advance,Fever,25,8,sale,2025-10-25,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-10-25,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-25,demo_script
+Digene Tablets,Digestion,20,13,sale,2025-10-25,demo_script
+Cetirizine,Allergy,15,13,sale,2025-10-25,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-10-25,demo_script
+Band-Aid,First Aid,5,27,sale,2025-10-25,demo_script
+Dolo 650,Fever,30,18,sale,2025-10-26,demo_script
+Crocin Advance,Fever,25,10,sale,2025-10-26,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-10-26,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-10-26,demo_script
+Digene Tablets,Digestion,20,13,sale,2025-10-26,demo_script
+Cetirizine,Allergy,15,18,sale,2025-10-26,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-10-26,demo_script
+Band-Aid,First Aid,5,23,sale,2025-10-26,demo_script
+Dolo 650,Fever,30,12,sale,2025-10-27,demo_script
+Crocin Advance,Fever,25,8,sale,2025-10-27,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-10-27,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-27,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-10-27,demo_script
+Cetirizine,Allergy,15,13,sale,2025-10-27,demo_script
+Vicks VapoRub,Cold,45,5,sale,2025-10-27,demo_script
+Band-Aid,First Aid,5,14,sale,2025-10-27,demo_script
+Dolo 650,Fever,30,18,sale,2025-10-28,demo_script
+Dolo 650,Fever,30,259,restock,2025-10-28,demo_script
+Crocin Advance,Fever,25,9,sale,2025-10-28,demo_script
+Crocin Advance,Fever,25,120,restock,2025-10-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2025-10-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,84,restock,2025-10-28,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-28,demo_script
+Volini Spray,Pain Relief,120,52,restock,2025-10-28,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-10-28,demo_script
+Digene Tablets,Digestion,20,167,restock,2025-10-28,demo_script
+Cetirizine,Allergy,15,8,sale,2025-10-28,demo_script
+Cetirizine,Allergy,15,172,restock,2025-10-28,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-10-28,demo_script
+Vicks VapoRub,Cold,45,69,restock,2025-10-28,demo_script
+Band-Aid,First Aid,5,20,sale,2025-10-28,demo_script
+Band-Aid,First Aid,5,306,restock,2025-10-28,demo_script
+Dolo 650,Fever,30,18,sale,2025-10-29,demo_script
+Crocin Advance,Fever,25,6,sale,2025-10-29,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-10-29,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-29,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-10-29,demo_script
+Cetirizine,Allergy,15,13,sale,2025-10-29,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-10-29,demo_script
+Band-Aid,First Aid,5,15,sale,2025-10-29,demo_script
+Dolo 650,Fever,30,17,sale,2025-10-30,demo_script
+Crocin Advance,Fever,25,6,sale,2025-10-30,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-30,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-10-30,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-10-30,demo_script
+Cetirizine,Allergy,15,11,sale,2025-10-30,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-10-30,demo_script
+Band-Aid,First Aid,5,22,sale,2025-10-30,demo_script
+Dolo 650,Fever,30,16,sale,2025-10-31,demo_script
+Crocin Advance,Fever,25,9,sale,2025-10-31,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-10-31,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-10-31,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-10-31,demo_script
+Cetirizine,Allergy,15,15,sale,2025-10-31,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-10-31,demo_script
+Band-Aid,First Aid,5,23,sale,2025-10-31,demo_script
+Dolo 650,Fever,30,15,sale,2025-11-01,demo_script
+Dolo 650,Fever,30,229,restock,2025-11-01,demo_script
+Crocin Advance,Fever,25,11,sale,2025-11-01,demo_script
+Crocin Advance,Fever,25,112,restock,2025-11-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-11-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,71,restock,2025-11-01,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-11-01,demo_script
+Volini Spray,Pain Relief,120,53,restock,2025-11-01,demo_script
+Digene Tablets,Digestion,20,13,sale,2025-11-01,demo_script
+Digene Tablets,Digestion,20,156,restock,2025-11-01,demo_script
+Cetirizine,Allergy,15,16,sale,2025-11-01,demo_script
+Cetirizine,Allergy,15,186,restock,2025-11-01,demo_script
+Vicks VapoRub,Cold,45,7,sale,2025-11-01,demo_script
+Vicks VapoRub,Cold,45,60,restock,2025-11-01,demo_script
+Band-Aid,First Aid,5,23,sale,2025-11-01,demo_script
+Band-Aid,First Aid,5,356,restock,2025-11-01,demo_script
+Dolo 650,Fever,30,18,sale,2025-11-02,demo_script
+Crocin Advance,Fever,25,8,sale,2025-11-02,demo_script
+Amoxicillin 500mg,Antibiotic,85,7,sale,2025-11-02,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-11-02,demo_script
+Digene Tablets,Digestion,20,14,sale,2025-11-02,demo_script
+Cetirizine,Allergy,15,18,sale,2025-11-02,demo_script
+Vicks VapoRub,Cold,45,9,sale,2025-11-02,demo_script
+Band-Aid,First Aid,5,21,sale,2025-11-02,demo_script
+Dolo 650,Fever,30,12,sale,2025-11-03,demo_script
+Crocin Advance,Fever,25,8,sale,2025-11-03,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-11-03,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-03,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-11-03,demo_script
+Cetirizine,Allergy,15,15,sale,2025-11-03,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-11-03,demo_script
+Band-Aid,First Aid,5,15,sale,2025-11-03,demo_script
+Dolo 650,Fever,30,12,sale,2025-11-04,demo_script
+Crocin Advance,Fever,25,7,sale,2025-11-04,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-11-04,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-11-04,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-11-04,demo_script
+Cetirizine,Allergy,15,8,sale,2025-11-04,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-11-04,demo_script
+Band-Aid,First Aid,5,21,sale,2025-11-04,demo_script
+Dolo 650,Fever,30,11,sale,2025-11-05,demo_script
+Crocin Advance,Fever,25,9,sale,2025-11-05,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-11-05,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-11-05,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-11-05,demo_script
+Cetirizine,Allergy,15,13,sale,2025-11-05,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-11-05,demo_script
+Band-Aid,First Aid,5,17,sale,2025-11-05,demo_script
+Dolo 650,Fever,30,10,sale,2025-11-06,demo_script
+Crocin Advance,Fever,25,7,sale,2025-11-06,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-11-06,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-11-06,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-11-06,demo_script
+Cetirizine,Allergy,15,10,sale,2025-11-06,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-06,demo_script
+Band-Aid,First Aid,5,18,sale,2025-11-06,demo_script
+Dolo 650,Fever,30,16,sale,2025-11-07,demo_script
+Crocin Advance,Fever,25,9,sale,2025-11-07,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2025-11-07,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-07,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-11-07,demo_script
+Cetirizine,Allergy,15,13,sale,2025-11-07,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-07,demo_script
+Band-Aid,First Aid,5,15,sale,2025-11-07,demo_script
+Dolo 650,Fever,30,13,sale,2025-11-08,demo_script
+Crocin Advance,Fever,25,9,sale,2025-11-08,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-11-08,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-11-08,demo_script
+Digene Tablets,Digestion,20,16,sale,2025-11-08,demo_script
+Cetirizine,Allergy,15,19,sale,2025-11-08,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-08,demo_script
+Band-Aid,First Aid,5,20,sale,2025-11-08,demo_script
+Dolo 650,Fever,30,19,sale,2025-11-09,demo_script
+Crocin Advance,Fever,25,13,sale,2025-11-09,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-11-09,demo_script
+Volini Spray,Pain Relief,120,5,sale,2025-11-09,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-11-09,demo_script
+Cetirizine,Allergy,15,18,sale,2025-11-09,demo_script
+Vicks VapoRub,Cold,45,9,sale,2025-11-09,demo_script
+Band-Aid,First Aid,5,30,sale,2025-11-09,demo_script
+Dolo 650,Fever,30,12,sale,2025-11-10,demo_script
+Crocin Advance,Fever,25,7,sale,2025-11-10,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-11-10,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-10,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-11-10,demo_script
+Cetirizine,Allergy,15,8,sale,2025-11-10,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-10,demo_script
+Band-Aid,First Aid,5,25,sale,2025-11-10,demo_script
+Dolo 650,Fever,30,10,sale,2025-11-11,demo_script
+Crocin Advance,Fever,25,8,sale,2025-11-11,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2025-11-11,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-11-11,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-11-11,demo_script
+Cetirizine,Allergy,15,15,sale,2025-11-11,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-11,demo_script
+Band-Aid,First Aid,5,17,sale,2025-11-11,demo_script
+Dolo 650,Fever,30,19,sale,2025-11-12,demo_script
+Crocin Advance,Fever,25,8,sale,2025-11-12,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-11-12,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-12,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-11-12,demo_script
+Cetirizine,Allergy,15,12,sale,2025-11-12,demo_script
+Vicks VapoRub,Cold,45,7,sale,2025-11-12,demo_script
+Band-Aid,First Aid,5,15,sale,2025-11-12,demo_script
+Dolo 650,Fever,30,12,sale,2025-11-13,demo_script
+Crocin Advance,Fever,25,9,sale,2025-11-13,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-11-13,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-13,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-11-13,demo_script
+Cetirizine,Allergy,15,9,sale,2025-11-13,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-13,demo_script
+Band-Aid,First Aid,5,24,sale,2025-11-13,demo_script
+Dolo 650,Fever,30,12,sale,2025-11-14,demo_script
+Dolo 650,Fever,30,232,restock,2025-11-14,demo_script
+Crocin Advance,Fever,25,5,sale,2025-11-14,demo_script
+Crocin Advance,Fever,25,112,restock,2025-11-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-11-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,70,restock,2025-11-14,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-11-14,demo_script
+Volini Spray,Pain Relief,120,44,restock,2025-11-14,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-11-14,demo_script
+Digene Tablets,Digestion,20,137,restock,2025-11-14,demo_script
+Cetirizine,Allergy,15,10,sale,2025-11-14,demo_script
+Cetirizine,Allergy,15,196,restock,2025-11-14,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-11-14,demo_script
+Vicks VapoRub,Cold,45,62,restock,2025-11-14,demo_script
+Band-Aid,First Aid,5,21,sale,2025-11-14,demo_script
+Band-Aid,First Aid,5,331,restock,2025-11-14,demo_script
+Dolo 650,Fever,30,18,sale,2025-11-15,demo_script
+Dolo 650,Fever,30,215,restock,2025-11-15,demo_script
+Crocin Advance,Fever,25,12,sale,2025-11-15,demo_script
+Crocin Advance,Fever,25,110,restock,2025-11-15,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-11-15,demo_script
+Amoxicillin 500mg,Antibiotic,85,82,restock,2025-11-15,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-11-15,demo_script
+Volini Spray,Pain Relief,120,50,restock,2025-11-15,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-11-15,demo_script
+Digene Tablets,Digestion,20,135,restock,2025-11-15,demo_script
+Cetirizine,Allergy,15,19,sale,2025-11-15,demo_script
+Cetirizine,Allergy,15,209,restock,2025-11-15,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-15,demo_script
+Vicks VapoRub,Cold,45,70,restock,2025-11-15,demo_script
+Band-Aid,First Aid,5,22,sale,2025-11-15,demo_script
+Band-Aid,First Aid,5,309,restock,2025-11-15,demo_script
+Dolo 650,Fever,30,19,sale,2025-11-16,demo_script
+Crocin Advance,Fever,25,9,sale,2025-11-16,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-11-16,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-11-16,demo_script
+Digene Tablets,Digestion,20,15,sale,2025-11-16,demo_script
+Cetirizine,Allergy,15,14,sale,2025-11-16,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-11-16,demo_script
+Band-Aid,First Aid,5,19,sale,2025-11-16,demo_script
+Dolo 650,Fever,30,15,sale,2025-11-17,demo_script
+Crocin Advance,Fever,25,10,sale,2025-11-17,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-11-17,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-17,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-11-17,demo_script
+Cetirizine,Allergy,15,9,sale,2025-11-17,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-11-17,demo_script
+Band-Aid,First Aid,5,16,sale,2025-11-17,demo_script
+Dolo 650,Fever,30,11,sale,2025-11-18,demo_script
+Crocin Advance,Fever,25,7,sale,2025-11-18,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-11-18,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-11-18,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-11-18,demo_script
+Cetirizine,Allergy,15,8,sale,2025-11-18,demo_script
+Vicks VapoRub,Cold,45,7,sale,2025-11-18,demo_script
+Band-Aid,First Aid,5,17,sale,2025-11-18,demo_script
+Dolo 650,Fever,30,15,sale,2025-11-19,demo_script
+Crocin Advance,Fever,25,7,sale,2025-11-19,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2025-11-19,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-19,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-11-19,demo_script
+Cetirizine,Allergy,15,9,sale,2025-11-19,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-11-19,demo_script
+Band-Aid,First Aid,5,24,sale,2025-11-19,demo_script
+Dolo 650,Fever,30,16,sale,2025-11-20,demo_script
+Crocin Advance,Fever,25,5,sale,2025-11-20,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-11-20,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-20,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-11-20,demo_script
+Cetirizine,Allergy,15,11,sale,2025-11-20,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-20,demo_script
+Band-Aid,First Aid,5,23,sale,2025-11-20,demo_script
+Dolo 650,Fever,30,13,sale,2025-11-21,demo_script
+Crocin Advance,Fever,25,8,sale,2025-11-21,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-11-21,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-21,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-11-21,demo_script
+Cetirizine,Allergy,15,13,sale,2025-11-21,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-21,demo_script
+Band-Aid,First Aid,5,25,sale,2025-11-21,demo_script
+Dolo 650,Fever,30,18,sale,2025-11-22,demo_script
+Crocin Advance,Fever,25,8,sale,2025-11-22,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-11-22,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-11-22,demo_script
+Digene Tablets,Digestion,20,15,sale,2025-11-22,demo_script
+Cetirizine,Allergy,15,14,sale,2025-11-22,demo_script
+Vicks VapoRub,Cold,45,7,sale,2025-11-22,demo_script
+Band-Aid,First Aid,5,29,sale,2025-11-22,demo_script
+Dolo 650,Fever,30,19,sale,2025-11-23,demo_script
+Crocin Advance,Fever,25,13,sale,2025-11-23,demo_script
+Amoxicillin 500mg,Antibiotic,85,7,sale,2025-11-23,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-11-23,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-11-23,demo_script
+Cetirizine,Allergy,15,14,sale,2025-11-23,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-11-23,demo_script
+Band-Aid,First Aid,5,22,sale,2025-11-23,demo_script
+Dolo 650,Fever,30,16,sale,2025-11-24,demo_script
+Crocin Advance,Fever,25,9,sale,2025-11-24,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-11-24,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-24,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-11-24,demo_script
+Cetirizine,Allergy,15,14,sale,2025-11-24,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-11-24,demo_script
+Band-Aid,First Aid,5,15,sale,2025-11-24,demo_script
+Dolo 650,Fever,30,15,sale,2025-11-25,demo_script
+Crocin Advance,Fever,25,6,sale,2025-11-25,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-11-25,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-25,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-11-25,demo_script
+Cetirizine,Allergy,15,9,sale,2025-11-25,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-11-25,demo_script
+Band-Aid,First Aid,5,20,sale,2025-11-25,demo_script
+Dolo 650,Fever,30,17,sale,2025-11-26,demo_script
+Crocin Advance,Fever,25,8,sale,2025-11-26,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2025-11-26,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-26,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-11-26,demo_script
+Cetirizine,Allergy,15,13,sale,2025-11-26,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-11-26,demo_script
+Band-Aid,First Aid,5,14,sale,2025-11-26,demo_script
+Dolo 650,Fever,30,18,sale,2025-11-27,demo_script
+Crocin Advance,Fever,25,7,sale,2025-11-27,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-11-27,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-11-27,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-11-27,demo_script
+Cetirizine,Allergy,15,8,sale,2025-11-27,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-27,demo_script
+Band-Aid,First Aid,5,25,sale,2025-11-27,demo_script
+Dolo 650,Fever,30,13,sale,2025-11-28,demo_script
+Dolo 650,Fever,30,210,restock,2025-11-28,demo_script
+Crocin Advance,Fever,25,10,sale,2025-11-28,demo_script
+Crocin Advance,Fever,25,131,restock,2025-11-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-11-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,73,restock,2025-11-28,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-11-28,demo_script
+Volini Spray,Pain Relief,120,45,restock,2025-11-28,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-11-28,demo_script
+Digene Tablets,Digestion,20,146,restock,2025-11-28,demo_script
+Cetirizine,Allergy,15,11,sale,2025-11-28,demo_script
+Cetirizine,Allergy,15,170,restock,2025-11-28,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-11-28,demo_script
+Vicks VapoRub,Cold,45,55,restock,2025-11-28,demo_script
+Band-Aid,First Aid,5,25,sale,2025-11-28,demo_script
+Band-Aid,First Aid,5,351,restock,2025-11-28,demo_script
+Dolo 650,Fever,30,17,sale,2025-11-29,demo_script
+Crocin Advance,Fever,25,8,sale,2025-11-29,demo_script
+Amoxicillin 500mg,Antibiotic,85,8,sale,2025-11-29,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-11-29,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-11-29,demo_script
+Cetirizine,Allergy,15,15,sale,2025-11-29,demo_script
+Vicks VapoRub,Cold,45,7,sale,2025-11-29,demo_script
+Band-Aid,First Aid,5,25,sale,2025-11-29,demo_script
+Dolo 650,Fever,30,23,sale,2025-11-30,demo_script
+Crocin Advance,Fever,25,7,sale,2025-11-30,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-11-30,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-11-30,demo_script
+Digene Tablets,Digestion,20,15,sale,2025-11-30,demo_script
+Cetirizine,Allergy,15,17,sale,2025-11-30,demo_script
+Vicks VapoRub,Cold,45,9,sale,2025-11-30,demo_script
+Band-Aid,First Aid,5,26,sale,2025-11-30,demo_script
+Dolo 650,Fever,30,14,sale,2025-12-01,demo_script
+Dolo 650,Fever,30,221,restock,2025-12-01,demo_script
+Crocin Advance,Fever,25,6,sale,2025-12-01,demo_script
+Crocin Advance,Fever,25,142,restock,2025-12-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-12-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,77,restock,2025-12-01,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-01,demo_script
+Volini Spray,Pain Relief,120,51,restock,2025-12-01,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-12-01,demo_script
+Digene Tablets,Digestion,20,152,restock,2025-12-01,demo_script
+Cetirizine,Allergy,15,14,sale,2025-12-01,demo_script
+Cetirizine,Allergy,15,198,restock,2025-12-01,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-01,demo_script
+Vicks VapoRub,Cold,45,70,restock,2025-12-01,demo_script
+Band-Aid,First Aid,5,22,sale,2025-12-01,demo_script
+Band-Aid,First Aid,5,307,restock,2025-12-01,demo_script
+Dolo 650,Fever,30,15,sale,2025-12-02,demo_script
+Crocin Advance,Fever,25,6,sale,2025-12-02,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-12-02,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-02,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-12-02,demo_script
+Cetirizine,Allergy,15,11,sale,2025-12-02,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-02,demo_script
+Band-Aid,First Aid,5,20,sale,2025-12-02,demo_script
+Dolo 650,Fever,30,12,sale,2025-12-03,demo_script
+Crocin Advance,Fever,25,6,sale,2025-12-03,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-12-03,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-03,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-12-03,demo_script
+Cetirizine,Allergy,15,12,sale,2025-12-03,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-03,demo_script
+Band-Aid,First Aid,5,22,sale,2025-12-03,demo_script
+Dolo 650,Fever,30,13,sale,2025-12-04,demo_script
+Crocin Advance,Fever,25,8,sale,2025-12-04,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-12-04,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-04,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-12-04,demo_script
+Cetirizine,Allergy,15,11,sale,2025-12-04,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-04,demo_script
+Band-Aid,First Aid,5,19,sale,2025-12-04,demo_script
+Dolo 650,Fever,30,17,sale,2025-12-05,demo_script
+Crocin Advance,Fever,25,9,sale,2025-12-05,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-12-05,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-05,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-12-05,demo_script
+Cetirizine,Allergy,15,13,sale,2025-12-05,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-05,demo_script
+Band-Aid,First Aid,5,20,sale,2025-12-05,demo_script
+Dolo 650,Fever,30,23,sale,2025-12-06,demo_script
+Crocin Advance,Fever,25,9,sale,2025-12-06,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-12-06,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-12-06,demo_script
+Digene Tablets,Digestion,20,15,sale,2025-12-06,demo_script
+Cetirizine,Allergy,15,12,sale,2025-12-06,demo_script
+Vicks VapoRub,Cold,45,7,sale,2025-12-06,demo_script
+Band-Aid,First Aid,5,30,sale,2025-12-06,demo_script
+Dolo 650,Fever,30,17,sale,2025-12-07,demo_script
+Crocin Advance,Fever,25,8,sale,2025-12-07,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-12-07,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-12-07,demo_script
+Digene Tablets,Digestion,20,13,sale,2025-12-07,demo_script
+Cetirizine,Allergy,15,13,sale,2025-12-07,demo_script
+Vicks VapoRub,Cold,45,7,sale,2025-12-07,demo_script
+Band-Aid,First Aid,5,18,sale,2025-12-07,demo_script
+Dolo 650,Fever,30,17,sale,2025-12-08,demo_script
+Crocin Advance,Fever,25,9,sale,2025-12-08,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-12-08,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-08,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-12-08,demo_script
+Cetirizine,Allergy,15,13,sale,2025-12-08,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-08,demo_script
+Band-Aid,First Aid,5,16,sale,2025-12-08,demo_script
+Dolo 650,Fever,30,15,sale,2025-12-09,demo_script
+Crocin Advance,Fever,25,8,sale,2025-12-09,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-12-09,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-09,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-12-09,demo_script
+Cetirizine,Allergy,15,14,sale,2025-12-09,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-09,demo_script
+Band-Aid,First Aid,5,22,sale,2025-12-09,demo_script
+Dolo 650,Fever,30,13,sale,2025-12-10,demo_script
+Crocin Advance,Fever,25,5,sale,2025-12-10,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-12-10,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-10,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-12-10,demo_script
+Cetirizine,Allergy,15,13,sale,2025-12-10,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-10,demo_script
+Band-Aid,First Aid,5,20,sale,2025-12-10,demo_script
+Dolo 650,Fever,30,16,sale,2025-12-11,demo_script
+Crocin Advance,Fever,25,6,sale,2025-12-11,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-12-11,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-11,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-12-11,demo_script
+Cetirizine,Allergy,15,9,sale,2025-12-11,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-11,demo_script
+Band-Aid,First Aid,5,24,sale,2025-12-11,demo_script
+Dolo 650,Fever,30,17,sale,2025-12-12,demo_script
+Crocin Advance,Fever,25,7,sale,2025-12-12,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-12-12,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-12,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-12-12,demo_script
+Cetirizine,Allergy,15,9,sale,2025-12-12,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-12,demo_script
+Band-Aid,First Aid,5,14,sale,2025-12-12,demo_script
+Dolo 650,Fever,30,18,sale,2025-12-13,demo_script
+Crocin Advance,Fever,25,12,sale,2025-12-13,demo_script
+Amoxicillin 500mg,Antibiotic,85,8,sale,2025-12-13,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-13,demo_script
+Digene Tablets,Digestion,20,15,sale,2025-12-13,demo_script
+Cetirizine,Allergy,15,16,sale,2025-12-13,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-13,demo_script
+Band-Aid,First Aid,5,21,sale,2025-12-13,demo_script
+Dolo 650,Fever,30,24,sale,2025-12-14,demo_script
+Dolo 650,Fever,30,269,restock,2025-12-14,demo_script
+Crocin Advance,Fever,25,11,sale,2025-12-14,demo_script
+Crocin Advance,Fever,25,119,restock,2025-12-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-12-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,83,restock,2025-12-14,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-14,demo_script
+Volini Spray,Pain Relief,120,48,restock,2025-12-14,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-12-14,demo_script
+Digene Tablets,Digestion,20,173,restock,2025-12-14,demo_script
+Cetirizine,Allergy,15,11,sale,2025-12-14,demo_script
+Cetirizine,Allergy,15,208,restock,2025-12-14,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-14,demo_script
+Vicks VapoRub,Cold,45,59,restock,2025-12-14,demo_script
+Band-Aid,First Aid,5,19,sale,2025-12-14,demo_script
+Band-Aid,First Aid,5,283,restock,2025-12-14,demo_script
+Dolo 650,Fever,30,11,sale,2025-12-15,demo_script
+Crocin Advance,Fever,25,8,sale,2025-12-15,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-12-15,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-15,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-12-15,demo_script
+Cetirizine,Allergy,15,12,sale,2025-12-15,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-15,demo_script
+Band-Aid,First Aid,5,17,sale,2025-12-15,demo_script
+Dolo 650,Fever,30,12,sale,2025-12-16,demo_script
+Crocin Advance,Fever,25,7,sale,2025-12-16,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-12-16,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-16,demo_script
+Digene Tablets,Digestion,20,10,sale,2025-12-16,demo_script
+Cetirizine,Allergy,15,12,sale,2025-12-16,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-16,demo_script
+Band-Aid,First Aid,5,22,sale,2025-12-16,demo_script
+Dolo 650,Fever,30,14,sale,2025-12-17,demo_script
+Crocin Advance,Fever,25,6,sale,2025-12-17,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-12-17,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-17,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-12-17,demo_script
+Cetirizine,Allergy,15,11,sale,2025-12-17,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-17,demo_script
+Band-Aid,First Aid,5,18,sale,2025-12-17,demo_script
+Dolo 650,Fever,30,13,sale,2025-12-18,demo_script
+Crocin Advance,Fever,25,7,sale,2025-12-18,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-12-18,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-18,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-12-18,demo_script
+Cetirizine,Allergy,15,10,sale,2025-12-18,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-18,demo_script
+Band-Aid,First Aid,5,22,sale,2025-12-18,demo_script
+Dolo 650,Fever,30,17,sale,2025-12-19,demo_script
+Crocin Advance,Fever,25,10,sale,2025-12-19,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-12-19,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-19,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-12-19,demo_script
+Cetirizine,Allergy,15,11,sale,2025-12-19,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-19,demo_script
+Band-Aid,First Aid,5,15,sale,2025-12-19,demo_script
+Dolo 650,Fever,30,21,sale,2025-12-20,demo_script
+Crocin Advance,Fever,25,7,sale,2025-12-20,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-12-20,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-12-20,demo_script
+Digene Tablets,Digestion,20,14,sale,2025-12-20,demo_script
+Cetirizine,Allergy,15,16,sale,2025-12-20,demo_script
+Vicks VapoRub,Cold,45,7,sale,2025-12-20,demo_script
+Band-Aid,First Aid,5,31,sale,2025-12-20,demo_script
+Dolo 650,Fever,30,21,sale,2025-12-21,demo_script
+Crocin Advance,Fever,25,11,sale,2025-12-21,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-12-21,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-12-21,demo_script
+Digene Tablets,Digestion,20,16,sale,2025-12-21,demo_script
+Cetirizine,Allergy,15,16,sale,2025-12-21,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-21,demo_script
+Band-Aid,First Aid,5,31,sale,2025-12-21,demo_script
+Dolo 650,Fever,30,15,sale,2025-12-22,demo_script
+Crocin Advance,Fever,25,8,sale,2025-12-22,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-12-22,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-22,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-12-22,demo_script
+Cetirizine,Allergy,15,14,sale,2025-12-22,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-22,demo_script
+Band-Aid,First Aid,5,23,sale,2025-12-22,demo_script
+Dolo 650,Fever,30,17,sale,2025-12-23,demo_script
+Crocin Advance,Fever,25,5,sale,2025-12-23,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2025-12-23,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-23,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-12-23,demo_script
+Cetirizine,Allergy,15,12,sale,2025-12-23,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-23,demo_script
+Band-Aid,First Aid,5,20,sale,2025-12-23,demo_script
+Dolo 650,Fever,30,18,sale,2025-12-24,demo_script
+Crocin Advance,Fever,25,6,sale,2025-12-24,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-12-24,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-24,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-12-24,demo_script
+Cetirizine,Allergy,15,11,sale,2025-12-24,demo_script
+Vicks VapoRub,Cold,45,3,sale,2025-12-24,demo_script
+Band-Aid,First Aid,5,15,sale,2025-12-24,demo_script
+Dolo 650,Fever,30,17,sale,2025-12-25,demo_script
+Crocin Advance,Fever,25,6,sale,2025-12-25,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-12-25,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-25,demo_script
+Digene Tablets,Digestion,20,12,sale,2025-12-25,demo_script
+Cetirizine,Allergy,15,9,sale,2025-12-25,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-25,demo_script
+Band-Aid,First Aid,5,15,sale,2025-12-25,demo_script
+Dolo 650,Fever,30,16,sale,2025-12-26,demo_script
+Crocin Advance,Fever,25,7,sale,2025-12-26,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-12-26,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-26,demo_script
+Digene Tablets,Digestion,20,8,sale,2025-12-26,demo_script
+Cetirizine,Allergy,15,9,sale,2025-12-26,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-26,demo_script
+Band-Aid,First Aid,5,14,sale,2025-12-26,demo_script
+Dolo 650,Fever,30,15,sale,2025-12-27,demo_script
+Crocin Advance,Fever,25,9,sale,2025-12-27,demo_script
+Amoxicillin 500mg,Antibiotic,85,8,sale,2025-12-27,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-27,demo_script
+Digene Tablets,Digestion,20,14,sale,2025-12-27,demo_script
+Cetirizine,Allergy,15,15,sale,2025-12-27,demo_script
+Vicks VapoRub,Cold,45,7,sale,2025-12-27,demo_script
+Band-Aid,First Aid,5,23,sale,2025-12-27,demo_script
+Dolo 650,Fever,30,21,sale,2025-12-28,demo_script
+Dolo 650,Fever,30,267,restock,2025-12-28,demo_script
+Crocin Advance,Fever,25,8,sale,2025-12-28,demo_script
+Crocin Advance,Fever,25,135,restock,2025-12-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,8,sale,2025-12-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,70,restock,2025-12-28,demo_script
+Volini Spray,Pain Relief,120,4,sale,2025-12-28,demo_script
+Volini Spray,Pain Relief,120,46,restock,2025-12-28,demo_script
+Digene Tablets,Digestion,20,11,sale,2025-12-28,demo_script
+Digene Tablets,Digestion,20,169,restock,2025-12-28,demo_script
+Cetirizine,Allergy,15,13,sale,2025-12-28,demo_script
+Cetirizine,Allergy,15,215,restock,2025-12-28,demo_script
+Vicks VapoRub,Cold,45,7,sale,2025-12-28,demo_script
+Vicks VapoRub,Cold,45,66,restock,2025-12-28,demo_script
+Band-Aid,First Aid,5,24,sale,2025-12-28,demo_script
+Band-Aid,First Aid,5,327,restock,2025-12-28,demo_script
+Dolo 650,Fever,30,16,sale,2025-12-29,demo_script
+Crocin Advance,Fever,25,8,sale,2025-12-29,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2025-12-29,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-29,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-12-29,demo_script
+Cetirizine,Allergy,15,15,sale,2025-12-29,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-29,demo_script
+Band-Aid,First Aid,5,25,sale,2025-12-29,demo_script
+Dolo 650,Fever,30,12,sale,2025-12-30,demo_script
+Crocin Advance,Fever,25,10,sale,2025-12-30,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2025-12-30,demo_script
+Volini Spray,Pain Relief,120,3,sale,2025-12-30,demo_script
+Digene Tablets,Digestion,20,9,sale,2025-12-30,demo_script
+Cetirizine,Allergy,15,13,sale,2025-12-30,demo_script
+Vicks VapoRub,Cold,45,4,sale,2025-12-30,demo_script
+Band-Aid,First Aid,5,24,sale,2025-12-30,demo_script
+Dolo 650,Fever,30,12,sale,2025-12-31,demo_script
+Crocin Advance,Fever,25,7,sale,2025-12-31,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2025-12-31,demo_script
+Volini Spray,Pain Relief,120,2,sale,2025-12-31,demo_script
+Digene Tablets,Digestion,20,7,sale,2025-12-31,demo_script
+Cetirizine,Allergy,15,15,sale,2025-12-31,demo_script
+Vicks VapoRub,Cold,45,6,sale,2025-12-31,demo_script
+Band-Aid,First Aid,5,14,sale,2025-12-31,demo_script
+Dolo 650,Fever,30,18,sale,2026-01-01,demo_script
+Dolo 650,Fever,30,215,restock,2026-01-01,demo_script
+Crocin Advance,Fever,25,7,sale,2026-01-01,demo_script
+Crocin Advance,Fever,25,115,restock,2026-01-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,81,restock,2026-01-01,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-01,demo_script
+Volini Spray,Pain Relief,120,44,restock,2026-01-01,demo_script
+Digene Tablets,Digestion,20,8,sale,2026-01-01,demo_script
+Digene Tablets,Digestion,20,143,restock,2026-01-01,demo_script
+Cetirizine,Allergy,15,11,sale,2026-01-01,demo_script
+Cetirizine,Allergy,15,162,restock,2026-01-01,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-01-01,demo_script
+Vicks VapoRub,Cold,45,71,restock,2026-01-01,demo_script
+Band-Aid,First Aid,5,16,sale,2026-01-01,demo_script
+Band-Aid,First Aid,5,355,restock,2026-01-01,demo_script
+Dolo 650,Fever,30,15,sale,2026-01-02,demo_script
+Crocin Advance,Fever,25,6,sale,2026-01-02,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-01-02,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-02,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-01-02,demo_script
+Cetirizine,Allergy,15,9,sale,2026-01-02,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-01-02,demo_script
+Band-Aid,First Aid,5,21,sale,2026-01-02,demo_script
+Dolo 650,Fever,30,22,sale,2026-01-03,demo_script
+Crocin Advance,Fever,25,13,sale,2026-01-03,demo_script
+Amoxicillin 500mg,Antibiotic,85,7,sale,2026-01-03,demo_script
+Volini Spray,Pain Relief,120,4,sale,2026-01-03,demo_script
+Digene Tablets,Digestion,20,16,sale,2026-01-03,demo_script
+Cetirizine,Allergy,15,19,sale,2026-01-03,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-03,demo_script
+Band-Aid,First Aid,5,29,sale,2026-01-03,demo_script
+Dolo 650,Fever,30,22,sale,2026-01-04,demo_script
+Crocin Advance,Fever,25,11,sale,2026-01-04,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-04,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-04,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-01-04,demo_script
+Cetirizine,Allergy,15,17,sale,2026-01-04,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-04,demo_script
+Band-Aid,First Aid,5,32,sale,2026-01-04,demo_script
+Dolo 650,Fever,30,10,sale,2026-01-05,demo_script
+Crocin Advance,Fever,25,9,sale,2026-01-05,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-01-05,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-01-05,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-01-05,demo_script
+Cetirizine,Allergy,15,9,sale,2026-01-05,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-01-05,demo_script
+Band-Aid,First Aid,5,15,sale,2026-01-05,demo_script
+Dolo 650,Fever,30,13,sale,2026-01-06,demo_script
+Crocin Advance,Fever,25,7,sale,2026-01-06,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-01-06,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-06,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-01-06,demo_script
+Cetirizine,Allergy,15,13,sale,2026-01-06,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-06,demo_script
+Band-Aid,First Aid,5,20,sale,2026-01-06,demo_script
+Dolo 650,Fever,30,16,sale,2026-01-07,demo_script
+Crocin Advance,Fever,25,8,sale,2026-01-07,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-01-07,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-07,demo_script
+Digene Tablets,Digestion,20,12,sale,2026-01-07,demo_script
+Cetirizine,Allergy,15,14,sale,2026-01-07,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-01-07,demo_script
+Band-Aid,First Aid,5,19,sale,2026-01-07,demo_script
+Dolo 650,Fever,30,13,sale,2026-01-08,demo_script
+Crocin Advance,Fever,25,9,sale,2026-01-08,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2026-01-08,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-08,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-01-08,demo_script
+Cetirizine,Allergy,15,13,sale,2026-01-08,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-01-08,demo_script
+Band-Aid,First Aid,5,24,sale,2026-01-08,demo_script
+Dolo 650,Fever,30,19,sale,2026-01-09,demo_script
+Crocin Advance,Fever,25,7,sale,2026-01-09,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-09,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-09,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-01-09,demo_script
+Cetirizine,Allergy,15,11,sale,2026-01-09,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-01-09,demo_script
+Band-Aid,First Aid,5,19,sale,2026-01-09,demo_script
+Dolo 650,Fever,30,19,sale,2026-01-10,demo_script
+Crocin Advance,Fever,25,12,sale,2026-01-10,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-10,demo_script
+Volini Spray,Pain Relief,120,4,sale,2026-01-10,demo_script
+Digene Tablets,Digestion,20,13,sale,2026-01-10,demo_script
+Cetirizine,Allergy,15,16,sale,2026-01-10,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-10,demo_script
+Band-Aid,First Aid,5,30,sale,2026-01-10,demo_script
+Dolo 650,Fever,30,16,sale,2026-01-11,demo_script
+Crocin Advance,Fever,25,12,sale,2026-01-11,demo_script
+Amoxicillin 500mg,Antibiotic,85,8,sale,2026-01-11,demo_script
+Volini Spray,Pain Relief,120,4,sale,2026-01-11,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-01-11,demo_script
+Cetirizine,Allergy,15,14,sale,2026-01-11,demo_script
+Vicks VapoRub,Cold,45,9,sale,2026-01-11,demo_script
+Band-Aid,First Aid,5,20,sale,2026-01-11,demo_script
+Dolo 650,Fever,30,12,sale,2026-01-12,demo_script
+Crocin Advance,Fever,25,6,sale,2026-01-12,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-01-12,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-01-12,demo_script
+Digene Tablets,Digestion,20,12,sale,2026-01-12,demo_script
+Cetirizine,Allergy,15,10,sale,2026-01-12,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-01-12,demo_script
+Band-Aid,First Aid,5,16,sale,2026-01-12,demo_script
+Dolo 650,Fever,30,14,sale,2026-01-13,demo_script
+Crocin Advance,Fever,25,7,sale,2026-01-13,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-01-13,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-01-13,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-01-13,demo_script
+Cetirizine,Allergy,15,13,sale,2026-01-13,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-01-13,demo_script
+Band-Aid,First Aid,5,21,sale,2026-01-13,demo_script
+Dolo 650,Fever,30,13,sale,2026-01-14,demo_script
+Dolo 650,Fever,30,252,restock,2026-01-14,demo_script
+Crocin Advance,Fever,25,6,sale,2026-01-14,demo_script
+Crocin Advance,Fever,25,114,restock,2026-01-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,86,restock,2026-01-14,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-14,demo_script
+Volini Spray,Pain Relief,120,46,restock,2026-01-14,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-01-14,demo_script
+Digene Tablets,Digestion,20,148,restock,2026-01-14,demo_script
+Cetirizine,Allergy,15,13,sale,2026-01-14,demo_script
+Cetirizine,Allergy,15,175,restock,2026-01-14,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-01-14,demo_script
+Vicks VapoRub,Cold,45,69,restock,2026-01-14,demo_script
+Band-Aid,First Aid,5,22,sale,2026-01-14,demo_script
+Band-Aid,First Aid,5,350,restock,2026-01-14,demo_script
+Dolo 650,Fever,30,12,sale,2026-01-15,demo_script
+Crocin Advance,Fever,25,8,sale,2026-01-15,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-15,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-01-15,demo_script
+Digene Tablets,Digestion,20,8,sale,2026-01-15,demo_script
+Cetirizine,Allergy,15,15,sale,2026-01-15,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-01-15,demo_script
+Band-Aid,First Aid,5,22,sale,2026-01-15,demo_script
+Dolo 650,Fever,30,12,sale,2026-01-16,demo_script
+Crocin Advance,Fever,25,7,sale,2026-01-16,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-01-16,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-01-16,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-01-16,demo_script
+Cetirizine,Allergy,15,11,sale,2026-01-16,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-16,demo_script
+Band-Aid,First Aid,5,18,sale,2026-01-16,demo_script
+Dolo 650,Fever,30,18,sale,2026-01-17,demo_script
+Crocin Advance,Fever,25,8,sale,2026-01-17,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-01-17,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-17,demo_script
+Digene Tablets,Digestion,20,10,sale,2026-01-17,demo_script
+Cetirizine,Allergy,15,19,sale,2026-01-17,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-01-17,demo_script
+Band-Aid,First Aid,5,29,sale,2026-01-17,demo_script
+Dolo 650,Fever,30,15,sale,2026-01-18,demo_script
+Crocin Advance,Fever,25,10,sale,2026-01-18,demo_script
+Amoxicillin 500mg,Antibiotic,85,7,sale,2026-01-18,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-18,demo_script
+Digene Tablets,Digestion,20,12,sale,2026-01-18,demo_script
+Cetirizine,Allergy,15,15,sale,2026-01-18,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-18,demo_script
+Band-Aid,First Aid,5,23,sale,2026-01-18,demo_script
+Dolo 650,Fever,30,17,sale,2026-01-19,demo_script
+Crocin Advance,Fever,25,6,sale,2026-01-19,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-19,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-19,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-01-19,demo_script
+Cetirizine,Allergy,15,14,sale,2026-01-19,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-01-19,demo_script
+Band-Aid,First Aid,5,17,sale,2026-01-19,demo_script
+Dolo 650,Fever,30,17,sale,2026-01-20,demo_script
+Crocin Advance,Fever,25,6,sale,2026-01-20,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-20,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-01-20,demo_script
+Digene Tablets,Digestion,20,11,sale,2026-01-20,demo_script
+Cetirizine,Allergy,15,14,sale,2026-01-20,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-01-20,demo_script
+Band-Aid,First Aid,5,22,sale,2026-01-20,demo_script
+Dolo 650,Fever,30,18,sale,2026-01-21,demo_script
+Crocin Advance,Fever,25,9,sale,2026-01-21,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2026-01-21,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-21,demo_script
+Digene Tablets,Digestion,20,11,sale,2026-01-21,demo_script
+Cetirizine,Allergy,15,12,sale,2026-01-21,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-01-21,demo_script
+Band-Aid,First Aid,5,25,sale,2026-01-21,demo_script
+Dolo 650,Fever,30,17,sale,2026-01-22,demo_script
+Crocin Advance,Fever,25,5,sale,2026-01-22,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-01-22,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-22,demo_script
+Digene Tablets,Digestion,20,11,sale,2026-01-22,demo_script
+Cetirizine,Allergy,15,14,sale,2026-01-22,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-22,demo_script
+Band-Aid,First Aid,5,15,sale,2026-01-22,demo_script
+Dolo 650,Fever,30,12,sale,2026-01-23,demo_script
+Crocin Advance,Fever,25,5,sale,2026-01-23,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-23,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-01-23,demo_script
+Digene Tablets,Digestion,20,11,sale,2026-01-23,demo_script
+Cetirizine,Allergy,15,11,sale,2026-01-23,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-01-23,demo_script
+Band-Aid,First Aid,5,23,sale,2026-01-23,demo_script
+Dolo 650,Fever,30,24,sale,2026-01-24,demo_script
+Crocin Advance,Fever,25,9,sale,2026-01-24,demo_script
+Amoxicillin 500mg,Antibiotic,85,8,sale,2026-01-24,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-24,demo_script
+Digene Tablets,Digestion,20,14,sale,2026-01-24,demo_script
+Cetirizine,Allergy,15,14,sale,2026-01-24,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-24,demo_script
+Band-Aid,First Aid,5,25,sale,2026-01-24,demo_script
+Dolo 650,Fever,30,21,sale,2026-01-25,demo_script
+Crocin Advance,Fever,25,12,sale,2026-01-25,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-25,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-25,demo_script
+Digene Tablets,Digestion,20,13,sale,2026-01-25,demo_script
+Cetirizine,Allergy,15,19,sale,2026-01-25,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-25,demo_script
+Band-Aid,First Aid,5,29,sale,2026-01-25,demo_script
+Dolo 650,Fever,30,17,sale,2026-01-26,demo_script
+Crocin Advance,Fever,25,8,sale,2026-01-26,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-01-26,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-01-26,demo_script
+Digene Tablets,Digestion,20,12,sale,2026-01-26,demo_script
+Cetirizine,Allergy,15,13,sale,2026-01-26,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-01-26,demo_script
+Band-Aid,First Aid,5,15,sale,2026-01-26,demo_script
+Dolo 650,Fever,30,13,sale,2026-01-27,demo_script
+Crocin Advance,Fever,25,7,sale,2026-01-27,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-01-27,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-01-27,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-01-27,demo_script
+Cetirizine,Allergy,15,14,sale,2026-01-27,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-01-27,demo_script
+Band-Aid,First Aid,5,20,sale,2026-01-27,demo_script
+Dolo 650,Fever,30,14,sale,2026-01-28,demo_script
+Dolo 650,Fever,30,254,restock,2026-01-28,demo_script
+Crocin Advance,Fever,25,6,sale,2026-01-28,demo_script
+Crocin Advance,Fever,25,119,restock,2026-01-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-01-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,84,restock,2026-01-28,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-28,demo_script
+Volini Spray,Pain Relief,120,53,restock,2026-01-28,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-01-28,demo_script
+Digene Tablets,Digestion,20,171,restock,2026-01-28,demo_script
+Cetirizine,Allergy,15,11,sale,2026-01-28,demo_script
+Cetirizine,Allergy,15,185,restock,2026-01-28,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-01-28,demo_script
+Vicks VapoRub,Cold,45,58,restock,2026-01-28,demo_script
+Band-Aid,First Aid,5,14,sale,2026-01-28,demo_script
+Band-Aid,First Aid,5,305,restock,2026-01-28,demo_script
+Dolo 650,Fever,30,18,sale,2026-01-29,demo_script
+Crocin Advance,Fever,25,10,sale,2026-01-29,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-01-29,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-01-29,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-01-29,demo_script
+Cetirizine,Allergy,15,14,sale,2026-01-29,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-29,demo_script
+Band-Aid,First Aid,5,23,sale,2026-01-29,demo_script
+Dolo 650,Fever,30,19,sale,2026-01-30,demo_script
+Crocin Advance,Fever,25,7,sale,2026-01-30,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2026-01-30,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-01-30,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-01-30,demo_script
+Cetirizine,Allergy,15,11,sale,2026-01-30,demo_script
+Vicks VapoRub,Cold,45,3,sale,2026-01-30,demo_script
+Band-Aid,First Aid,5,21,sale,2026-01-30,demo_script
+Dolo 650,Fever,30,22,sale,2026-01-31,demo_script
+Crocin Advance,Fever,25,11,sale,2026-01-31,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-01-31,demo_script
+Volini Spray,Pain Relief,120,5,sale,2026-01-31,demo_script
+Digene Tablets,Digestion,20,14,sale,2026-01-31,demo_script
+Cetirizine,Allergy,15,14,sale,2026-01-31,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-01-31,demo_script
+Band-Aid,First Aid,5,26,sale,2026-01-31,demo_script
+Dolo 650,Fever,30,24,sale,2026-02-01,demo_script
+Dolo 650,Fever,30,218,restock,2026-02-01,demo_script
+Crocin Advance,Fever,25,8,sale,2026-02-01,demo_script
+Crocin Advance,Fever,25,121,restock,2026-02-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-02-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,85,restock,2026-02-01,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-01,demo_script
+Volini Spray,Pain Relief,120,49,restock,2026-02-01,demo_script
+Digene Tablets,Digestion,20,12,sale,2026-02-01,demo_script
+Digene Tablets,Digestion,20,138,restock,2026-02-01,demo_script
+Cetirizine,Allergy,15,15,sale,2026-02-01,demo_script
+Cetirizine,Allergy,15,211,restock,2026-02-01,demo_script
+Vicks VapoRub,Cold,45,9,sale,2026-02-01,demo_script
+Vicks VapoRub,Cold,45,55,restock,2026-02-01,demo_script
+Band-Aid,First Aid,5,23,sale,2026-02-01,demo_script
+Band-Aid,First Aid,5,273,restock,2026-02-01,demo_script
+Dolo 650,Fever,30,14,sale,2026-02-02,demo_script
+Crocin Advance,Fever,25,7,sale,2026-02-02,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-02-02,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-02,demo_script
+Digene Tablets,Digestion,20,12,sale,2026-02-02,demo_script
+Cetirizine,Allergy,15,12,sale,2026-02-02,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-02-02,demo_script
+Band-Aid,First Aid,5,22,sale,2026-02-02,demo_script
+Dolo 650,Fever,30,14,sale,2026-02-03,demo_script
+Crocin Advance,Fever,25,6,sale,2026-02-03,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-02-03,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-03,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-02-03,demo_script
+Cetirizine,Allergy,15,8,sale,2026-02-03,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-02-03,demo_script
+Band-Aid,First Aid,5,16,sale,2026-02-03,demo_script
+Dolo 650,Fever,30,18,sale,2026-02-04,demo_script
+Crocin Advance,Fever,25,6,sale,2026-02-04,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-02-04,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-04,demo_script
+Digene Tablets,Digestion,20,8,sale,2026-02-04,demo_script
+Cetirizine,Allergy,15,14,sale,2026-02-04,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-02-04,demo_script
+Band-Aid,First Aid,5,25,sale,2026-02-04,demo_script
+Dolo 650,Fever,30,16,sale,2026-02-05,demo_script
+Crocin Advance,Fever,25,8,sale,2026-02-05,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-02-05,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-05,demo_script
+Digene Tablets,Digestion,20,11,sale,2026-02-05,demo_script
+Cetirizine,Allergy,15,10,sale,2026-02-05,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-02-05,demo_script
+Band-Aid,First Aid,5,17,sale,2026-02-05,demo_script
+Dolo 650,Fever,30,19,sale,2026-02-06,demo_script
+Crocin Advance,Fever,25,8,sale,2026-02-06,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-02-06,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-06,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-02-06,demo_script
+Cetirizine,Allergy,15,14,sale,2026-02-06,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-02-06,demo_script
+Band-Aid,First Aid,5,15,sale,2026-02-06,demo_script
+Dolo 650,Fever,30,20,sale,2026-02-07,demo_script
+Crocin Advance,Fever,25,11,sale,2026-02-07,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-02-07,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-07,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-02-07,demo_script
+Cetirizine,Allergy,15,12,sale,2026-02-07,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-02-07,demo_script
+Band-Aid,First Aid,5,20,sale,2026-02-07,demo_script
+Dolo 650,Fever,30,21,sale,2026-02-08,demo_script
+Crocin Advance,Fever,25,8,sale,2026-02-08,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-02-08,demo_script
+Volini Spray,Pain Relief,120,4,sale,2026-02-08,demo_script
+Digene Tablets,Digestion,20,15,sale,2026-02-08,demo_script
+Cetirizine,Allergy,15,15,sale,2026-02-08,demo_script
+Vicks VapoRub,Cold,45,9,sale,2026-02-08,demo_script
+Band-Aid,First Aid,5,29,sale,2026-02-08,demo_script
+Dolo 650,Fever,30,14,sale,2026-02-09,demo_script
+Crocin Advance,Fever,25,9,sale,2026-02-09,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2026-02-09,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-09,demo_script
+Digene Tablets,Digestion,20,10,sale,2026-02-09,demo_script
+Cetirizine,Allergy,15,15,sale,2026-02-09,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-02-09,demo_script
+Band-Aid,First Aid,5,20,sale,2026-02-09,demo_script
+Dolo 650,Fever,30,12,sale,2026-02-10,demo_script
+Crocin Advance,Fever,25,7,sale,2026-02-10,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-02-10,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-10,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-02-10,demo_script
+Cetirizine,Allergy,15,12,sale,2026-02-10,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-02-10,demo_script
+Band-Aid,First Aid,5,24,sale,2026-02-10,demo_script
+Dolo 650,Fever,30,14,sale,2026-02-11,demo_script
+Crocin Advance,Fever,25,8,sale,2026-02-11,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-02-11,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-11,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-02-11,demo_script
+Cetirizine,Allergy,15,9,sale,2026-02-11,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-02-11,demo_script
+Band-Aid,First Aid,5,25,sale,2026-02-11,demo_script
+Dolo 650,Fever,30,15,sale,2026-02-12,demo_script
+Crocin Advance,Fever,25,7,sale,2026-02-12,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-02-12,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-12,demo_script
+Digene Tablets,Digestion,20,12,sale,2026-02-12,demo_script
+Cetirizine,Allergy,15,8,sale,2026-02-12,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-02-12,demo_script
+Band-Aid,First Aid,5,21,sale,2026-02-12,demo_script
+Dolo 650,Fever,30,13,sale,2026-02-13,demo_script
+Crocin Advance,Fever,25,10,sale,2026-02-13,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-02-13,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-13,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-02-13,demo_script
+Cetirizine,Allergy,15,11,sale,2026-02-13,demo_script
+Vicks VapoRub,Cold,45,3,sale,2026-02-13,demo_script
+Band-Aid,First Aid,5,17,sale,2026-02-13,demo_script
+Dolo 650,Fever,30,25,sale,2026-02-14,demo_script
+Dolo 650,Fever,30,248,restock,2026-02-14,demo_script
+Crocin Advance,Fever,25,8,sale,2026-02-14,demo_script
+Crocin Advance,Fever,25,109,restock,2026-02-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-02-14,demo_script
+Amoxicillin 500mg,Antibiotic,85,83,restock,2026-02-14,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-14,demo_script
+Volini Spray,Pain Relief,120,49,restock,2026-02-14,demo_script
+Digene Tablets,Digestion,20,10,sale,2026-02-14,demo_script
+Digene Tablets,Digestion,20,144,restock,2026-02-14,demo_script
+Cetirizine,Allergy,15,13,sale,2026-02-14,demo_script
+Cetirizine,Allergy,15,183,restock,2026-02-14,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-02-14,demo_script
+Vicks VapoRub,Cold,45,54,restock,2026-02-14,demo_script
+Band-Aid,First Aid,5,32,sale,2026-02-14,demo_script
+Band-Aid,First Aid,5,287,restock,2026-02-14,demo_script
+Dolo 650,Fever,30,22,sale,2026-02-15,demo_script
+Dolo 650,Fever,30,266,restock,2026-02-15,demo_script
+Crocin Advance,Fever,25,12,sale,2026-02-15,demo_script
+Crocin Advance,Fever,25,113,restock,2026-02-15,demo_script
+Amoxicillin 500mg,Antibiotic,85,7,sale,2026-02-15,demo_script
+Amoxicillin 500mg,Antibiotic,85,69,restock,2026-02-15,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-15,demo_script
+Volini Spray,Pain Relief,120,48,restock,2026-02-15,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-02-15,demo_script
+Digene Tablets,Digestion,20,136,restock,2026-02-15,demo_script
+Cetirizine,Allergy,15,15,sale,2026-02-15,demo_script
+Cetirizine,Allergy,15,186,restock,2026-02-15,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-02-15,demo_script
+Vicks VapoRub,Cold,45,66,restock,2026-02-15,demo_script
+Band-Aid,First Aid,5,30,sale,2026-02-15,demo_script
+Band-Aid,First Aid,5,348,restock,2026-02-15,demo_script
+Dolo 650,Fever,30,12,sale,2026-02-16,demo_script
+Crocin Advance,Fever,25,6,sale,2026-02-16,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2026-02-16,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-16,demo_script
+Digene Tablets,Digestion,20,11,sale,2026-02-16,demo_script
+Cetirizine,Allergy,15,12,sale,2026-02-16,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-02-16,demo_script
+Band-Aid,First Aid,5,15,sale,2026-02-16,demo_script
+Dolo 650,Fever,30,14,sale,2026-02-17,demo_script
+Crocin Advance,Fever,25,7,sale,2026-02-17,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-02-17,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-17,demo_script
+Digene Tablets,Digestion,20,10,sale,2026-02-17,demo_script
+Cetirizine,Allergy,15,14,sale,2026-02-17,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-02-17,demo_script
+Band-Aid,First Aid,5,22,sale,2026-02-17,demo_script
+Dolo 650,Fever,30,11,sale,2026-02-18,demo_script
+Crocin Advance,Fever,25,6,sale,2026-02-18,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-02-18,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-18,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-02-18,demo_script
+Cetirizine,Allergy,15,9,sale,2026-02-18,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-02-18,demo_script
+Band-Aid,First Aid,5,20,sale,2026-02-18,demo_script
+Dolo 650,Fever,30,15,sale,2026-02-19,demo_script
+Crocin Advance,Fever,25,7,sale,2026-02-19,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2026-02-19,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-19,demo_script
+Digene Tablets,Digestion,20,10,sale,2026-02-19,demo_script
+Cetirizine,Allergy,15,11,sale,2026-02-19,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-02-19,demo_script
+Band-Aid,First Aid,5,20,sale,2026-02-19,demo_script
+Dolo 650,Fever,30,18,sale,2026-02-20,demo_script
+Crocin Advance,Fever,25,8,sale,2026-02-20,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2026-02-20,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-20,demo_script
+Digene Tablets,Digestion,20,8,sale,2026-02-20,demo_script
+Cetirizine,Allergy,15,12,sale,2026-02-20,demo_script
+Vicks VapoRub,Cold,45,3,sale,2026-02-20,demo_script
+Band-Aid,First Aid,5,24,sale,2026-02-20,demo_script
+Dolo 650,Fever,30,17,sale,2026-02-21,demo_script
+Crocin Advance,Fever,25,12,sale,2026-02-21,demo_script
+Amoxicillin 500mg,Antibiotic,85,7,sale,2026-02-21,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-21,demo_script
+Digene Tablets,Digestion,20,10,sale,2026-02-21,demo_script
+Cetirizine,Allergy,15,19,sale,2026-02-21,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-02-21,demo_script
+Band-Aid,First Aid,5,26,sale,2026-02-21,demo_script
+Dolo 650,Fever,30,19,sale,2026-02-22,demo_script
+Crocin Advance,Fever,25,7,sale,2026-02-22,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-02-22,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-22,demo_script
+Digene Tablets,Digestion,20,12,sale,2026-02-22,demo_script
+Cetirizine,Allergy,15,14,sale,2026-02-22,demo_script
+Vicks VapoRub,Cold,45,9,sale,2026-02-22,demo_script
+Band-Aid,First Aid,5,26,sale,2026-02-22,demo_script
+Dolo 650,Fever,30,17,sale,2026-02-23,demo_script
+Crocin Advance,Fever,25,6,sale,2026-02-23,demo_script
+Amoxicillin 500mg,Antibiotic,85,4,sale,2026-02-23,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-23,demo_script
+Digene Tablets,Digestion,20,12,sale,2026-02-23,demo_script
+Cetirizine,Allergy,15,14,sale,2026-02-23,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-02-23,demo_script
+Band-Aid,First Aid,5,24,sale,2026-02-23,demo_script
+Dolo 650,Fever,30,14,sale,2026-02-24,demo_script
+Crocin Advance,Fever,25,7,sale,2026-02-24,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-02-24,demo_script
+Volini Spray,Pain Relief,120,2,sale,2026-02-24,demo_script
+Digene Tablets,Digestion,20,9,sale,2026-02-24,demo_script
+Cetirizine,Allergy,15,15,sale,2026-02-24,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-02-24,demo_script
+Band-Aid,First Aid,5,16,sale,2026-02-24,demo_script
+Dolo 650,Fever,30,17,sale,2026-02-25,demo_script
+Crocin Advance,Fever,25,6,sale,2026-02-25,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2026-02-25,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-25,demo_script
+Digene Tablets,Digestion,20,7,sale,2026-02-25,demo_script
+Cetirizine,Allergy,15,9,sale,2026-02-25,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-02-25,demo_script
+Band-Aid,First Aid,5,25,sale,2026-02-25,demo_script
+Dolo 650,Fever,30,12,sale,2026-02-26,demo_script
+Crocin Advance,Fever,25,8,sale,2026-02-26,demo_script
+Amoxicillin 500mg,Antibiotic,85,5,sale,2026-02-26,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-26,demo_script
+Digene Tablets,Digestion,20,8,sale,2026-02-26,demo_script
+Cetirizine,Allergy,15,8,sale,2026-02-26,demo_script
+Vicks VapoRub,Cold,45,4,sale,2026-02-26,demo_script
+Band-Aid,First Aid,5,24,sale,2026-02-26,demo_script
+Dolo 650,Fever,30,14,sale,2026-02-27,demo_script
+Crocin Advance,Fever,25,7,sale,2026-02-27,demo_script
+Amoxicillin 500mg,Antibiotic,85,3,sale,2026-02-27,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-27,demo_script
+Digene Tablets,Digestion,20,11,sale,2026-02-27,demo_script
+Cetirizine,Allergy,15,10,sale,2026-02-27,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-02-27,demo_script
+Band-Aid,First Aid,5,17,sale,2026-02-27,demo_script
+Dolo 650,Fever,30,13,sale,2026-02-28,demo_script
+Dolo 650,Fever,30,264,restock,2026-02-28,demo_script
+Crocin Advance,Fever,25,9,sale,2026-02-28,demo_script
+Crocin Advance,Fever,25,117,restock,2026-02-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,6,sale,2026-02-28,demo_script
+Amoxicillin 500mg,Antibiotic,85,81,restock,2026-02-28,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-02-28,demo_script
+Volini Spray,Pain Relief,120,50,restock,2026-02-28,demo_script
+Digene Tablets,Digestion,20,16,sale,2026-02-28,demo_script
+Digene Tablets,Digestion,20,146,restock,2026-02-28,demo_script
+Cetirizine,Allergy,15,14,sale,2026-02-28,demo_script
+Cetirizine,Allergy,15,195,restock,2026-02-28,demo_script
+Vicks VapoRub,Cold,45,7,sale,2026-02-28,demo_script
+Vicks VapoRub,Cold,45,70,restock,2026-02-28,demo_script
+Band-Aid,First Aid,5,33,sale,2026-02-28,demo_script
+Band-Aid,First Aid,5,352,restock,2026-02-28,demo_script
+Dolo 650,Fever,30,24,sale,2026-03-01,demo_script
+Dolo 650,Fever,30,221,restock,2026-03-01,demo_script
+Crocin Advance,Fever,25,7,sale,2026-03-01,demo_script
+Crocin Advance,Fever,25,138,restock,2026-03-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,7,sale,2026-03-01,demo_script
+Amoxicillin 500mg,Antibiotic,85,78,restock,2026-03-01,demo_script
+Volini Spray,Pain Relief,120,3,sale,2026-03-01,demo_script
+Volini Spray,Pain Relief,120,46,restock,2026-03-01,demo_script
+Digene Tablets,Digestion,20,15,sale,2026-03-01,demo_script
+Digene Tablets,Digestion,20,169,restock,2026-03-01,demo_script
+Cetirizine,Allergy,15,26,sale,2026-03-01,demo_script
+Cetirizine,Allergy,15,192,restock,2026-03-01,demo_script
+Vicks VapoRub,Cold,45,6,sale,2026-03-01,demo_script
+Vicks VapoRub,Cold,45,63,restock,2026-03-01,demo_script
+Band-Aid,First Aid,5,27,sale,2026-03-01,demo_script
+Band-Aid,First Aid,5,348,restock,2026-03-01,demo_script

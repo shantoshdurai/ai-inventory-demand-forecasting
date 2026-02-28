@@ -1,0 +1,25 @@
+# Ignore virtual environments
+venv/
+.env
+
+# Python compilation files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit specific
+.streamlit/
+
+# Database files
+*.db
+*.sqlite3
+
+# Demo data (optional if large, but CSVs usually fine, ignoring large data dirs)
+data/*.db
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
