@@ -95,9 +95,9 @@ export default function Simulator() {
                   ]} barSize={55}>
                     <XAxis dataKey="name" tick={{ fill: '#999', fontSize: 12 }} axisLine={false} tickLine={false} />
                     <YAxis tick={{ fill: '#444', fontSize: 10 }} axisLine={false} tickLine={false} />
-                    <Tooltip contentStyle={{ background: '#1a1a2e', border: '1px solid rgba(124,110,240,0.3)', borderRadius: 8, fontSize: 12 }} />
+                    <Tooltip contentStyle={{ background: 'white', border: '1.5px solid rgba(99,102,241,0.15)', borderRadius: 12, fontSize: 12, boxShadow: '0 4px 16px rgba(99,102,241,0.12)' }} />
                     <Bar dataKey="v" radius={[5, 5, 0, 0]}>
-                      <Cell fill="rgba(255,255,255,0.08)" /><Cell fill="#7c6ef0" />
+                      <Cell fill="rgba(99,102,241,0.12)" /><Cell fill="#6366f1" />
                     </Bar>
                   </BarChart>
                 </ResponsiveContainer>

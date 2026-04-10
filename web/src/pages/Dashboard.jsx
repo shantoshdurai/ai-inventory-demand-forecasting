@@ -8,9 +8,9 @@ import {
 const TT = ({ active, payload, label }) => {
   if (!active || !payload?.length) return null
   return (
-    <div style={{ background: '#1a1a2e', border: '1px solid rgba(124,110,240,0.3)', borderRadius: 8, padding: '7px 12px', fontSize: 12 }}>
+    <div style={{ background: 'white', border: '1.5px solid rgba(99,102,241,0.15)', borderRadius: 12, padding: '8px 14px', fontSize: 12, boxShadow: '0 4px 16px rgba(99,102,241,0.12)' }}>
       <div style={{ color: '#888', marginBottom: 2 }}>{label}</div>
-      <div style={{ color: '#f0eff5', fontWeight: 700 }}>{payload[0]?.value} units</div>
+      <div style={{ color: '#1e1b4b', fontWeight: 700 }}>{payload[0]?.value} units</div>
     </div>
   )
 }
@@ -65,12 +65,12 @@ export default function Dashboard() {
       {/* Stats */}
       <div className="grid-4">
         {[
-          { label: 'Products', value: stats.total_items, cls: '' },
-          { label: 'Low Stock Alerts', value: stats.low_stock_alerts, cls: 'amber' },
-          { label: 'Inventory Value', value: `₹${Math.round(stats.inventory_value).toLocaleString('en-IN')}`, cls: 'purple' },
-          { label: 'Total Units', value: Math.round(stats.total_units).toLocaleString(), cls: '' },
+          { label: 'Products', value: stats.total_items, cls: '', clay: '' },
+          { label: 'Low Stock Alerts', value: stats.low_stock_alerts, cls: 'amber', clay: 'card-clay-amber' },
+          { label: 'Inventory Value', value: `₹${Math.round(stats.inventory_value).toLocaleString('en-IN')}`, cls: 'purple', clay: 'card-clay-purple' },
+          { label: 'Total Units', value: Math.round(stats.total_units).toLocaleString(), cls: '', clay: 'card-clay-blue' },
         ].map(s => (
-          <div key={s.label} className="card">
+          <div key={s.label} className={`card ${s.clay}`}>
             <div className="card-label">{s.label}</div>
             <div className={`card-value ${s.cls}`}>{s.value}</div>
           </div>
@@ -104,12 +104,12 @@ export default function Dashboard() {
           <div className="sh">Sales Trend · 60 Days</div>
           <ResponsiveContainer width="100%" height={200}>
             <LineChart data={sales_trend}>
-              <CartesianGrid stroke="rgba(255,255,255,0.04)" vertical={false} />
-              <XAxis dataKey="date" tick={{ fill: '#555', fontSize: 10 }} tickLine={false} axisLine={false}
+              <CartesianGrid stroke="rgba(99,102,241,0.07)" vertical={false} />
+              <XAxis dataKey="date" tick={{ fill: '#999', fontSize: 10 }} tickLine={false} axisLine={false}
                 tickFormatter={v => v?.slice(5)} interval="preserveStartEnd" />
-              <YAxis tick={{ fill: '#555', fontSize: 10 }} tickLine={false} axisLine={false} width={28} />
+              <YAxis tick={{ fill: '#999', fontSize: 10 }} tickLine={false} axisLine={false} width={32} />
               <Tooltip content={<TT />} />
-              <Line type="monotone" dataKey="sales" stroke="#7c6ef0" strokeWidth={2.5} dot={false} />
+              <Line type="monotone" dataKey="sales" stroke="#6366f1" strokeWidth={2.5} dot={false} />
             </LineChart>
           </ResponsiveContainer>
         </div>
@@ -139,16 +139,16 @@ export default function Dashboard() {
         <div className="sh">Stock Levels</div>
         <ResponsiveContainer width="100%" height={Math.max((stock_levels?.length || 0) * 28, 160)}>
           <BarChart data={stock_levels} layout="vertical" margin={{ left: 0, right: 40 }}>
-            <XAxis type="number" tick={{ fill: '#444', fontSize: 10 }} tickLine={false} axisLine={false} />
-            <YAxis type="category" dataKey="item" width={120} tick={{ fill: '#bbb', fontSize: 11 }} tickLine={false} axisLine={false} />
+            <XAxis type="number" tick={{ fill: '#999', fontSize: 10 }} tickLine={false} axisLine={false} />
+            <YAxis type="category" dataKey="item" width={130} tick={{ fill: '#666', fontSize: 11 }} tickLine={false} axisLine={false} />
             <Tooltip
-              contentStyle={{ background: '#1a1a2e', border: '1px solid rgba(124,110,240,0.3)', borderRadius: 8, fontSize: 12 }}
+              contentStyle={{ background: 'white', border: '1.5px solid rgba(99,102,241,0.15)', borderRadius: 12, fontSize: 12, boxShadow: '0 4px 16px rgba(99,102,241,0.12)' }}
               formatter={(v, _, p) => [`${v} units · ${p.payload.status}`, p.payload.item]}
               labelFormatter={() => ''}
             />
-            <Bar dataKey="stock" radius={[0, 4, 4, 0]}
-              fill="#7c6ef0"
-              background={{ fill: 'rgba(255,255,255,0.02)', radius: [0, 4, 4, 0] }}
+            <Bar dataKey="stock" radius={[0, 6, 6, 0]}
+              fill="#6366f1"
+              background={{ fill: 'rgba(99,102,241,0.06)', radius: [0, 6, 6, 0] }}
             />
           </BarChart>
         </ResponsiveContainer>

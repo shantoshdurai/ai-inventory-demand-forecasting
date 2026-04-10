@@ -80,9 +80,9 @@ export default function Forecast() {
                 <CartesianGrid stroke="rgba(255,255,255,0.04)" vertical={false} />
                 <XAxis dataKey="date" tick={{ fill: '#444', fontSize: 10 }} tickLine={false} axisLine={false} interval="preserveStartEnd" />
                 <YAxis tick={{ fill: '#444', fontSize: 10 }} tickLine={false} axisLine={false} width={28} />
-                <Tooltip contentStyle={{ background: '#1a1a2e', border: '1px solid rgba(124,110,240,0.3)', borderRadius: 8, fontSize: 12 }} />
+                <Tooltip contentStyle={{ background: 'white', border: '1.5px solid rgba(99,102,241,0.15)', borderRadius: 12, fontSize: 12, boxShadow: '0 4px 16px rgba(99,102,241,0.12)' }} />
                 <Line type="monotone" dataKey="hist" name="Historical" stroke="rgba(255,255,255,0.18)" strokeWidth={2} dot={false} connectNulls={false} />
-                <Line type="monotone" dataKey="fc" name="Forecast" stroke="#7c6ef0" strokeWidth={2.5} dot={{ fill: '#7c6ef0', r: 3 }} connectNulls={false} />
+                <Line type="monotone" dataKey="fc" name="Forecast" stroke="#6366f1" strokeWidth={2.5} dot={{ fill: '#6366f1', r: 3 }} connectNulls={false} />
                 <ReferenceLine x={today} stroke="rgba(248,113,113,0.3)" strokeDasharray="3 3" />
               </LineChart>
             </ResponsiveContainer>

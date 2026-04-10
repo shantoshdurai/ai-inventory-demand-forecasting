@@ -26,8 +26,8 @@ export default function Nav({ page, setPage, health, panelOpen, setPanelOpen }) 
 
       <div className="nav-right">
         {isLive
-          ? <span className="badge badge-live">● Live AI</span>
-          : <span className="badge badge-demo">Demo</span>
+          ? <span className="badge badge-live"><span className="badge-dot" />Live AI</span>
+          : <span className="badge badge-demo"><span className="badge-dot" />Demo</span>
         }
         <button
           className={`panel-toggle${panelOpen ? ' active' : ''}`}
