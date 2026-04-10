@@ -55,8 +55,8 @@ def prepare_time_series_data(product_id=None):
         
         group = group.set_index('date')
         group = group.reindex(idx, fill_value=0)
-        group['product_id'] = group['product_id'].replace(0, method='ffill').replace(0, method='bfill')
-        group['item'] = group['item'].replace(0, method='ffill').replace(0, method='bfill')
+        group['product_id'] = group['product_id'].replace(0, pd.NA).ffill().bfill()
+        group['item'] = group['item'].replace(0, pd.NA).ffill().bfill()
         group = group.reset_index().rename(columns={'index': 'date'})
         
         # Date Features

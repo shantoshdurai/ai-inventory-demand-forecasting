@@ -65,5 +65,27 @@ def setup_database():
     conn.commit()
     conn.close()
 
+def is_database_empty():
+    conn = get_connection()
+    c = conn.cursor()
+    c.execute("SELECT COUNT(*) FROM products")
+    count = c.fetchone()[0]
+    conn.close()
+    return count == 0
+
+
+def auto_seed_demo_data():
+    if not is_database_empty():
+        return
+    try:
+        from core.generate_demo_data import generate_medical_shop_data, seed_database_with_demo_data
+        df = generate_medical_shop_data(days=180)
+        seed_database_with_demo_data(df)
+    except Exception:
+        pass
+
+
 # Initialize DB on import
 setup_database()
+# Auto-seed demo data if DB is empty (for recruiter demos)
+auto_seed_demo_data()

@@ -8,8 +8,8 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Streamlit specific
-.streamlit/
+# Streamlit specific (keep config.toml for deployment)
+.streamlit/secrets.toml
 
 # Database files
 *.db

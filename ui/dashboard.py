@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 from core.database import get_connection
+from core.insights_engine import get_smart_insights
 
 def fetch_stock_overview():
     conn = get_connection()
@@ -37,7 +38,7 @@ def render_dashboard():
     # ── Title ──
     st.markdown("""
     <div class="page-title">Dashboard</div>
-    <div class="page-desc">Real-time overview of your inventory, sales trends, and stock health.</div>
+    <div class="page-desc">Real-time overview of your Kirana shop — inventory, sales trends, and stock health.</div>
     """, unsafe_allow_html=True)
     
     stock_df = fetch_stock_overview()
@@ -70,6 +71,44 @@ def render_dashboard():
         </div>
     </div>
     """, unsafe_allow_html=True)
+
+    # ── AI Insights Section ──
+    insights = get_smart_insights()
+    if insights:
+        st.markdown('<div class="sh">AI Insights</div>', unsafe_allow_html=True)
+        severity_colors = {
+            "critical": "#f87171",
+            "warning": "#fbbf24",
+            "info": "#7c6ef0"
+        }
+        severity_icons = {
+            "critical": "&#9888;",
+            "warning": "&#9679;",
+            "info": "&#8599;"
+        }
+        insight_cards = ""
+        for ins in insights[:3]:
+            color = severity_colors.get(ins.get("severity", "info"), "#7c6ef0")
+            icon = severity_icons.get(ins.get("severity", "info"), "&#8599;")
+            insight_cards += f"""
+            <div class="card" style="border-left:3px solid {color};">
+                <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                    <div>
+                        <div style="font-size:14px; font-weight:600; color:#f0eff5; margin-bottom:6px;">
+                            <span style="color:{color}; margin-right:6px;">{icon}</span>{ins.get('title', '')}
+                        </div>
+                        <div style="font-size:13px; color:rgba(240,238,250,0.5); line-height:1.5;">
+                            {ins.get('detail', '')}
+                        </div>
+                    </div>
+                    <div style="font-family:'JetBrains Mono'; font-size:16px; font-weight:700;
+                         color:{color}; white-space:nowrap; margin-left:16px;">
+                        {ins.get('metric', '')}
+                    </div>
+                </div>
+            </div>
+            """
+        st.markdown(f'<div class="grid-3">{insight_cards}</div>', unsafe_allow_html=True)
 
     # ── Two columns: Chart + Activity ──
     col_chart, col_activity = st.columns([5, 3], gap="large")
@@ -148,7 +187,7 @@ def render_dashboard():
         fig.update_layout(
             template='plotly_dark',
             plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)',
-            margin=dict(l=0, r=50, t=0, b=0), height=280,
+            margin=dict(l=0, r=50, t=0, b=0), height=500,
             xaxis=dict(showgrid=True, gridcolor='rgba(255,255,255,0.04)', color='#666', tickfont=dict(size=10)),
             yaxis=dict(showgrid=False, color='#ccc', tickfont=dict(size=13, family='Plus Jakarta Sans')),
             hoverlabel=dict(bgcolor='#1a1a2e', bordercolor='#7c6ef0', font=dict(family='Plus Jakarta Sans'))

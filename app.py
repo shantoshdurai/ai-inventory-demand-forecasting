@@ -377,9 +377,11 @@ st.markdown("""
 
 
 def main():
+    from config import DEMO_MODE
+
     # ── Top Navigation using Streamlit native controls ──
     brand_col, nav_col = st.columns([1, 3])
-    
+
     with brand_col:
         st.markdown("""
         <div class="nav-brand">
@@ -387,25 +389,28 @@ def main():
             <div class="nav-name">StockSense</div>
         </div>
         """, unsafe_allow_html=True)
-    
+
     with nav_col:
         st.markdown('<div class="nav-radio">', unsafe_allow_html=True)
         page = st.radio(
             "nav",
-            ["Dashboard", "Input", "Forecast", "Simulator"],
+            ["Dashboard", "AI Advisor", "Input", "Forecast", "Simulator"],
             horizontal=True,
             label_visibility="collapsed"
         )
         st.markdown('</div>', unsafe_allow_html=True)
-    
+
     st.markdown('<div style="border-bottom:1px solid rgba(255,255,255,0.06); margin-bottom:24px;"></div>', unsafe_allow_html=True)
 
     # ── Page Content ──
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
-    
+
     if page == "Dashboard":
         from ui.dashboard import render_dashboard
         render_dashboard()
+    elif page == "AI Advisor":
+        from ui.advisor_page import render_advisor_page
+        render_advisor_page()
     elif page == "Input":
         from ui.input_page import render_input_page
         render_input_page()
@@ -415,7 +420,7 @@ def main():
     elif page == "Simulator":
         from ui.whatif_page import render_whatif_page
         render_whatif_page()
-    
+
     st.markdown('</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
