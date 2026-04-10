@@ -129,33 +129,19 @@ Voice text: "{transcribed_text}"
         return [{"error": f"Could not parse AI response: {e}"}]
 
 
-LANGUAGE_INSTRUCTIONS = {
-    "English": (
-        "LANGUAGE: Always respond in English only. "
-        "Do not use Hindi, Tamil, or any other language, even if the user writes in another language. "
-        "You may recognize Hindi/Tamil input but always reply in English."
-    ),
-    "Hindi": (
-        "LANGUAGE: Always respond in Hindi (Devanagari script). "
-        "You may mix common English business/inventory terms but write sentences in Hindi. "
-        "Example style: 'Aapke paas Toor Dal ka stock sirf 5 din ke liye bacha hai.'"
-    ),
-    "Tamil": (
-        "LANGUAGE: Always respond in Tamil (Tamil script). "
-        "You may use English inventory/business terms where natural, but reply in Tamil. "
-        "Example style: 'உங்கள் Toor Dal இருப்பு வெறும் 5 நாட்களுக்கு மட்டுமே உள்ளது.'"
-    ),
+LANGUAGE_RULES = {
+    "English": "ENGLISH ONLY. Every single word of your response must be in English. No Hindi words, no Tamil words, no Devanagari script, no transliteration. Pure English.",
+    "Hindi":   "HINDI ONLY. Every single word of your response must be in Hindi using Devanagari script. No English sentences — you may use English product names/numbers only. No Roman transliteration (no 'Aapke', 'hain', etc.).",
+    "Tamil":   "TAMIL ONLY. Every single word of your response must be in Tamil using Tamil script. No English sentences — you may use English product names/numbers only. No Roman transliteration.",
 }
 
 
 def chat_with_advisor(user_message, inventory_context, chat_history=None, language="English"):
     """AI advisor for Kirana shop business performance and inventory strategy."""
-    lang_instruction = LANGUAGE_INSTRUCTIONS.get(language, LANGUAGE_INSTRUCTIONS["English"])
+    lang_rule = LANGUAGE_RULES.get(language, LANGUAGE_RULES["English"])
 
     system_prompt = f"""You are StockSense AI — an expert business advisor for Kirana shops (Indian grocery/general stores).
 You speak in a friendly, practical tone.
-
-{lang_instruction}
 
 You have access to the shop's real-time inventory data below. Use it to give specific,
 actionable advice with exact product names and numbers.
@@ -178,6 +164,10 @@ RESPONSE GUIDELINES:
 - Suggest practical steps the shop owner can take TODAY
 - Use markdown formatting for readability (tables, bold, bullet points)
 - End with a follow-up question to keep the conversation useful
+
+===LANGUAGE RULE — THIS OVERRIDES EVERYTHING===
+{lang_rule}
+No exceptions. Ignore the language the user types in. Your output language is fixed.
 """
 
     history_text = ""
