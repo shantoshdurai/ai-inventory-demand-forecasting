@@ -15,7 +15,7 @@ from config import GEMINI_API_KEY, GEMINI_MODEL, DEMO_MODE
 from core.database import get_connection, auto_seed_demo_data
 from core.stock_tracker import log_transaction
 from core.data_importer import process_uploaded_file
-from core.insights_engine import get_smart_insights, get_inventory_summary_text
+from core.insights_engine import get_smart_insights, generate_rule_based_insights, get_inventory_summary_text
 from core.gemini_engine import (
     parse_text_input, parse_image_input, parse_voice_input,
     chat_with_advisor, analyze_performance, generate_ai_insights
@@ -115,7 +115,8 @@ def get_dashboard():
         stock_levels.append({"item": r['item'], "category": r['category'],
                               "price": r['price'], "stock": r['stock'], "status": status})
 
-    insights = get_smart_insights()
+    # Use only rule-based insights here (instant, no AI call)
+    insights = generate_rule_based_insights()
 
     return {
         "stats": {
