@@ -6,35 +6,58 @@
 ![XGBoost](https://img.shields.io/badge/ML-XGBoost%20%7C%20Prophet-green?style=flat-square)
 ![SQLite](https://img.shields.io/badge/Database-SQLite-blue?style=flat-square&logo=sqlite)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 
-> AI-powered inventory management and demand forecasting built specifically for **Kirana shops** (Indian grocery/general stores). Combines Gemma 4 31B vision + voice AI with XGBoost/Prophet ML models inside a modern Claymorphism UI — with a persistent AI side panel, multilingual support (English, Tamil, Hindi), and live demand simulations.
+## 🔗 Live Demo → [stocksense-yk37.onrender.com](https://stocksense-yk37.onrender.com)
 
-## 🔗 Live Demo
+> Free tier — may take 30–60 seconds to wake up on first visit.
 
-**[https://stocksense-yk37.onrender.com](https://stocksense-yk37.onrender.com)**
+---
 
-> Free tier — may take 30–60 seconds to wake up on first load.
+## What This Is
+
+Most inventory software is built for large retailers with IT teams. **Kirana shops** — the 12 million small grocery stores across India — run on handwritten ledgers, paper bills, and gut instinct.
+
+I built StockSense to change that. A shop owner can:
+- **Speak** "aaj 10 packet Maggi becha" and it logs the sale
+- **Photo** a distributor bill and AI extracts every item and quantity
+- **Ask** "what should I reorder this week?" and get a specific answer in Tamil, Hindi, or English
+- **See** a 14-day ML demand forecast for any product
+- **Simulate** "what happens to revenue if I give 15% off on rice?"
+
+The whole thing runs on a ₹0/month free tier.
 
 ---
 
 ## Screenshots
 
-### Dashboard — Live inventory overview with AI insights, sales trend chart, and stock levels
+### Dashboard — Live inventory with AI insights, sales trend, and stock levels
 
 ![Dashboard](images/Screenshot%202026-04-11%20011126.png)
 
 ---
 
-### Demand Forecast — ML-powered day-by-day demand predictions with XGBoost or Prophet
+### Demand Forecast — Day-by-day ML predictions using XGBoost or Prophet
 
 ![Demand Forecast](images/Screenshot%202026-04-11%20011232.png)
 
 ---
 
-### What-If Simulator — Simulate price discounts and instantly see the impact on demand and revenue
+### What-If Simulator — Discount impact on demand and revenue, with stockout risk detection
 
 ![What-If Simulator](images/Screenshot%202026-04-11%20011242.png)
+
+---
+
+## What Was Hard to Build
+
+**1. The dashboard was timing out on every load.**
+The original design called Gemini AI on every dashboard request to generate insights. Under load (or a slow API), this caused a 10–15 second blank screen. I decoupled it: the dashboard now uses a rule-based insights engine (instant, zero API calls) that checks critical stock thresholds, stockout velocity, and trending products from the DB directly. AI insights are available on demand via the side panel.
+
+**2. The AI kept responding in Hindi even when asked in English.**
+The model (Gemma 4 31B) was ignoring soft language instructions. Fixed it by placing a strict override at the *end* of the system prompt — models follow end-of-prompt instructions more reliably. The rule says "ENGLISH ONLY. Every single word. No exceptions." Three separate language modes: English, Tamil, Hindi — each locked independently.
+
+**3. Render's Python runtime doesn't have npm.**
+The build was failing because the deploy script tried to run `npm run build` on a Python dyno. Solved by committing the pre-built React `dist/` folder to the repo and removing it from `.gitignore`. FastAPI serves it as static files — single service, single URL, zero extra cost.
 
 ---
 
@@ -42,15 +65,15 @@
 
 | Feature | Description |
 |---|---|
-| **Persistent AI Side Panel** | Always-visible chat panel — ask questions, attach receipt photos, use voice input without leaving the page |
-| **Multilingual UI** | Full interface in English, Tamil (தமிழ்), and Hindi (हिंदी) — persists across sessions |
-| **AI Chat (Gemma 4 31B)** | Business advisor answers in English, Tamil, or Hindi — language-locked responses |
-| **Voice Input** | Speak transactions in English, Tamil, or Hindi using Web Speech API |
-| **Receipt Vision** | Upload a photo of a bill/receipt — Gemma 4 extracts all items and quantities |
-| **Demand Forecast** | XGBoost + Prophet ML predict future demand with historical sales data |
-| **What-If Simulator** | Simulate any discount % over any period — see demand uplift and revenue impact |
-| **Auto Demo Data** | Database auto-seeds 6 months of realistic Kirana data on first run |
-| **Claymorphism UI** | Light pastel design with 3D clay cards, glassmorphism panels, fully responsive |
+| **Persistent AI Side Panel** | Always-visible chat — ask questions, attach bills, use voice without leaving the page |
+| **Multilingual UI** | Full interface in English, Tamil (தமிழ்), Hindi (हिंदी) — saved per browser |
+| **AI Chat — Language Locked** | Responses strictly in your chosen language — no Hinglish mixing |
+| **Voice Input** | Web Speech API — works in English, Tamil, Hindi |
+| **Receipt Vision** | Upload a photo of any bill — Gemma 4 extracts items and quantities |
+| **Demand Forecast** | XGBoost + Prophet with day-by-day breakdown and stats |
+| **What-If Simulator** | Simulate any discount % — demand uplift, revenue delta, stockout risk |
+| **Auto Demo Data** | Realistic 6-month Kirana dataset seeds on first run |
+| **Claymorphism UI** | Light pastel design, 3D clay cards, glassmorphism panels, fully responsive |
 
 ---
 
@@ -60,10 +83,10 @@
 |---|---|
 | Frontend | React 18 + Vite, Recharts |
 | Backend | FastAPI + Uvicorn |
-| AI Engine | Google Gemma 4 31B (via `google-genai`) |
+| AI Engine | Google Gemma 4 31B (`google-genai`) |
 | ML Models | XGBoost, Facebook Prophet |
 | Database | SQLite |
-| Styling | Pure CSS — Claymorphism design system |
+| Hosting | Render (free tier) |
 
 ---
 
@@ -72,34 +95,33 @@
 ```
 ai-inventory-demand-forecasting/
 ├── api/
-│   └── main.py              # FastAPI backend — all REST endpoints
+│   └── main.py              # FastAPI — all REST endpoints
 ├── core/
-│   ├── database.py          # SQLite + auto-seed demo data
-│   ├── gemini_engine.py     # Gemma 4 — chat, vision, voice parsing
+│   ├── database.py          # SQLite + auto-seed 6 months of Kirana data
+│   ├── gemini_engine.py     # Gemma 4 — chat, vision, voice, language enforcement
 │   ├── insights_engine.py   # Rule-based instant insights (no AI timeout)
 │   ├── stock_tracker.py     # Transaction logging
 │   └── data_importer.py     # CSV / Excel import
 ├── ml/
 │   ├── forecaster.py        # XGBoost + Prophet pipeline
 │   └── feature_engineering.py
-├── web/                     # React frontend
+├── web/
 │   ├── src/
 │   │   ├── i18n.js          # English / Tamil / Hindi translations
-│   │   ├── api.js           # API client
-│   │   ├── App.jsx          # Root layout with side panel
+│   │   ├── App.jsx          # Root — splash screen, demo banner, footer
 │   │   ├── components/
-│   │   │   ├── Nav.jsx      # Top nav with language switcher
+│   │   │   ├── Nav.jsx      # Nav + language switcher dropdown
 │   │   │   └── SidePanel.jsx # Persistent AI chat panel
 │   │   └── pages/
 │   │       ├── Dashboard.jsx
 │   │       ├── InputData.jsx
 │   │       ├── Forecast.jsx
 │   │       └── Simulator.jsx
-│   └── dist/                # Production build (served by FastAPI)
+│   └── dist/                # Pre-built React (committed for Render deployment)
 ├── images/                  # Screenshots
-├── config.py                # API key + model config
-├── requirements.txt
-└── start.bat                # Windows: starts both servers at once
+├── render.yaml              # One-click Render deploy config
+├── config.py
+└── requirements.txt
 ```
 
 ---
@@ -111,135 +133,45 @@ ai-inventory-demand-forecasting/
 - Node.js 18+
 - Google AI Studio API key — free at [aistudio.google.com](https://aistudio.google.com)
 
-### 1. Clone & install Python dependencies
+### Steps
 
 ```bash
 git clone https://github.com/shantoshdurai/ai-inventory-demand-forecasting.git
 cd ai-inventory-demand-forecasting
 
+# Python backend
 python -m venv venv
-venv\Scripts\activate          # Windows
-# source venv/bin/activate     # Mac/Linux
-
+venv\Scripts\activate        # Windows
+# source venv/bin/activate   # Mac/Linux
 python -m pip install -r requirements.txt
-```
 
-### 2. Add your API key
+# Create .env
+echo GEMINI_API_KEY=your_key_here > .env
 
-Create a `.env` file in the root:
+# React frontend
+cd web && npm install && npm run build && cd ..
 
-```env
-GEMINI_API_KEY=your_api_key_here
-```
-
-> Without a key the app runs in **Demo mode** — all UI and ML features work, AI chat is disabled.
-
-### 3. Install frontend dependencies
-
-```bash
-cd web
-npm install
-cd ..
-```
-
-### 4. Run the app
-
-**Option A — Windows one-click:**
-```bash
-start.bat
-```
-
-**Option B — Manual (two terminals):**
-
-Terminal 1 — API server:
-```bash
+# Start both servers
+# Terminal 1:
 python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
+# Terminal 2:
+cd web && npm run dev
 ```
 
-Terminal 2 — React dev server:
-```bash
-cd web
-npm run dev
-```
+Open **http://localhost:5173**
 
-Open **http://localhost:5173** (or whichever port Vite picks).
+> Without an API key the app runs in **Demo mode** — all ML features work, AI chat is disabled.
 
 ---
 
-## Hosting a Live Demo
+## Deploying to Render
 
-### Option 1 — Render (Recommended, Free)
-
-Render can host both the FastAPI backend and serve the React build as static files.
-
-**Step 1 — Build the frontend:**
-```bash
-cd web && npm run build && cd ..
-```
-This creates `web/dist/` which FastAPI already serves automatically.
-
-**Step 2 — Push to GitHub (already done).**
-
-**Step 3 — Create a Render Web Service:**
-1. Go to [render.com](https://render.com) → New → Web Service
-2. Connect your GitHub repo: `shantoshdurai/ai-inventory-demand-forecasting`
-3. Set these values:
-
-| Field | Value |
-|---|---|
-| **Runtime** | Python 3 |
-| **Build Command** | `pip install -r requirements.txt` |
-| **Start Command** | `uvicorn api.main:app --host 0.0.0.0 --port $PORT` |
-
-4. Add environment variable: `GEMINI_API_KEY` → your key
-5. Click **Deploy** — Render gives you a public URL like `https://stocksense.onrender.com`
-
-> The React build in `web/dist/` is automatically served by FastAPI at the root URL.
-
----
-
-### Option 2 — Railway (One-click, Free tier)
-
-1. Go to [railway.app](https://railway.app) → New Project → Deploy from GitHub
-2. Select this repo
-3. Add variable: `GEMINI_API_KEY=your_key`
-4. Set start command: `uvicorn api.main:app --host 0.0.0.0 --port $PORT`
-5. Railway auto-detects Python and deploys — public URL in ~2 minutes
-
----
-
-### Option 3 — Vercel (Frontend) + Render (Backend)
-
-If you want the fastest frontend CDN delivery:
-
-**Frontend → Vercel:**
-```bash
-cd web
-npm run build
-npx vercel --prod
-```
-Set environment variable `VITE_API_BASE=https://your-render-backend.onrender.com`
-
-**Backend → Render:** same as Option 1 above.
-
-Then in `web/src/api.js` change:
-```js
-const BASE = import.meta.env.VITE_API_BASE || '/api'
-```
-
----
-
-### Before deploying — rebuild the frontend
-
-Any time you change React code, run:
-```bash
-cd web && npm run build && cd ..
-git add web/dist
-git commit -m "Rebuild frontend"
-git push
-```
-
-Render/Railway will auto-redeploy on every push.
+1. Fork this repo
+2. Go to [render.com](https://render.com) → New → Web Service
+3. Connect your fork
+4. Render auto-detects `render.yaml` — just add one environment variable:
+   - `GEMINI_API_KEY` = your Google AI Studio key
+5. Click **Deploy** — live in ~3 minutes
 
 ---
 
@@ -250,34 +182,13 @@ Render/Railway will auto-redeploy on every push.
 | XGBoost | ~12 units | ~8.3% | ~15.2 |
 | Prophet | ~14 units | ~9.1% | ~18.0 |
 
-*Evaluated on held-out 20% test split of Kirana sales data.*
-
----
-
-## Roadmap
-
-- [x] Natural language inventory input (English, Tamil, Hindi)
-- [x] Photo receipt parsing with Gemma 4 vision
-- [x] XGBoost + Prophet demand forecasting
-- [x] What-If price discount simulator
-- [x] Persistent AI side panel (always visible)
-- [x] Multilingual UI — English, Tamil, Hindi
-- [x] Claymorphism responsive UI
-- [x] Voice input (Web Speech API)
-- [x] Auto demo data seeding
-- [ ] One-click Render/Railway deployment
-- [ ] PDF export of forecast reports
-- [ ] Multi-user login system
-- [ ] WhatsApp integration for Kirana owners
-
 ---
 
 ## Author
 
-**Santosh Durai**
+**Santosh Durai** — Full Stack Developer, Tamil Nadu, India
+
 - GitHub: [@shantoshdurai](https://github.com/shantoshdurai)
 - LinkedIn: [santoshp123](https://www.linkedin.com/in/santoshp123)
 
----
-
-*Built for Kirana shop owners across Tamil Nadu and India.*
+*Built for the 12 million Kirana shops that keep India fed.*

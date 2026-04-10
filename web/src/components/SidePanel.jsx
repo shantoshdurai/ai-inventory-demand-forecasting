@@ -31,7 +31,7 @@ function bold(s) {
   return s.replace(/\*\*(.+?)\*\*/g, '<strong style="color:var(--purple)">$1</strong>')
 }
 
-export default function SidePanel({ open, onClose, t }) {
+export default function SidePanel({ open, onClose, t, isDemo }) {
   const [language, setLanguage] = useState('English')
   const [msgs, setMsgs] = useState([{ role: 'ai', content: null }])
   const [input, setInput] = useState('')
@@ -158,10 +158,22 @@ export default function SidePanel({ open, onClose, t }) {
         <button className="panel-close" onClick={onClose} title={t.settings_close}>✕</button>
       </div>
 
+      {/* Demo mode notice */}
+      {isDemo && (
+        <div style={{
+          margin: '10px 12px 0', padding: '10px 13px', borderRadius: 12,
+          background: 'linear-gradient(135deg, #fef3c7, #fde68a)',
+          border: '1.5px solid rgba(245,158,11,0.25)',
+          fontSize: 12, color: '#92400e', lineHeight: 1.5,
+        }}>
+          <strong>Demo Mode</strong> — AI responses are disabled. The dashboard, ML forecasts, and simulator are fully live with real data.
+        </div>
+      )}
+
       {/* Quick chips */}
       <div className="panel-chips">
         {t.panel_chips.map((c, i) => (
-          <button key={i} className="chip" onClick={() => send(c, null)}>{c}</button>
+          <button key={i} className="chip" onClick={() => !isDemo && send(c, null)} style={isDemo ? { opacity: 0.5, cursor: 'not-allowed' } : {}}>{c}</button>
         ))}
       </div>
 
@@ -229,10 +241,11 @@ export default function SidePanel({ open, onClose, t }) {
             className="panel-input"
             rows={1}
             value={input}
-            onChange={e => setInput(e.target.value)}
+            onChange={e => !isDemo && setInput(e.target.value)}
             onKeyDown={handleKey}
-            placeholder={t.panel_placeholder}
-            style={{ lineHeight: 1.5 }}
+            placeholder={isDemo ? 'AI disabled in demo mode — add GEMINI_API_KEY to enable' : t.panel_placeholder}
+            disabled={isDemo}
+            style={{ lineHeight: 1.5, opacity: isDemo ? 0.6 : 1 }}
           />
 
           <button
