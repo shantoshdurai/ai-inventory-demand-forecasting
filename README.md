@@ -10,6 +10,12 @@
 
 > AI-powered inventory management and demand forecasting built specifically for **Kirana shops** (Indian grocery/general stores). Combines Gemma 4 31B vision + voice AI with XGBoost/Prophet ML models inside a modern Claymorphism UI — with a persistent AI side panel, multilingual support (English, Tamil, Hindi), and live demand simulations.
 
+## 🔗 Live Demo
+
+**[https://stocksense-yk37.onrender.com](https://stocksense-yk37.onrender.com)**
+
+> Free tier — may take 30–60 seconds to wake up on first load.
+
 ---
 
 ## Screenshots
