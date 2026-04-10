@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import { api } from '../api'
 
-function ParsedTable({ items, onSave }) {
+function ParsedTable({ items, t, onSave }) {
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
   if (!items?.length) return null
@@ -19,33 +19,33 @@ function ParsedTable({ items, onSave }) {
 
   return (
     <div style={{ marginTop: 16 }}>
-      <div className="sh">{items.length} item(s) extracted</div>
+      <div className="sh">{t.input_extracted(items.length)}</div>
       <div className="card" style={{ padding: 0, overflow: 'hidden', marginBottom: 12 }}>
         <table>
-          <thead><tr><th>Item</th><th>Qty</th><th>Type</th><th>Date</th></tr></thead>
+          <thead><tr><th>{t.dash_col_item}</th><th>{t.dash_col_qty}</th><th>{t.dash_col_type}</th><th>{t.dash_col_date}</th></tr></thead>
           <tbody>
             {items.map((it, i) => (
               <tr key={i}>
                 <td style={{ fontWeight: 600 }}>{it.item}</td>
                 <td style={{ fontFamily: 'var(--mono)' }}>{it.qty}</td>
                 <td><span className={`tbadge tbadge-${it.type || 'sale'}`}>{it.type || 'sale'}</span></td>
-                <td style={{ color: 'var(--text3)' }}>{it.date || 'today'}</td>
+                <td style={{ color: 'var(--text3)' }}>{it.date || t.dash_col_date}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
       {saved
-        ? <div className="alert alert-success">✓ Saved {items.length} transactions.</div>
+        ? <div className="alert alert-success">{t.input_saved(items.length)}</div>
         : <button className="btn btn-primary" onClick={save} disabled={saving}>
-            {saving ? <><div className="spinner" style={{ width: 14, height: 14 }} /> Saving...</> : `Save ${items.length} items to inventory`}
+            {saving ? <><div className="spinner" style={{ width: 14, height: 14 }} />{t.input_saving}</> : t.input_save(items.length)}
           </button>
       }
     </div>
   )
 }
 
-export default function InputData() {
+export default function InputData({ t }) {
   const [tab, setTab] = useState('voice')
   const [text, setText] = useState('')
   const [loading, setLoading] = useState(false)
@@ -59,12 +59,12 @@ export default function InputData() {
 
   const reset = () => { setItems(null); setImportRes(null) }
 
-  const parseText = async (t, src) => {
-    if (!t.trim()) return
+  const parseText = async (txt, src) => {
+    if (!txt.trim()) return
     setLoading(true); setItems(null)
     try {
       const fn = src === 'voice' ? api.parseVoice : api.parseText
-      const { items: parsed } = await fn(t)
+      const { items: parsed } = await fn(txt)
       setItems(parsed)
     } catch (e) { setItems([{ error: e.message }]) }
     setLoading(false)
@@ -76,7 +76,7 @@ export default function InputData() {
     const rec = new SR()
     rec.lang = 'en-IN'; rec.continuous = false; rec.interimResults = false
     rec.onstart = () => setListening(true)
-    rec.onresult = e => { const t = e.results[0][0].transcript; setText(t); setListening(false); parseText(t, 'voice') }
+    rec.onresult = e => { const txt = e.results[0][0].transcript; setText(txt); setListening(false); parseText(txt, 'voice') }
     rec.onerror = () => setListening(false)
     rec.onend = () => setListening(false)
     rec.start(); recRef.current = rec
@@ -98,11 +98,11 @@ export default function InputData() {
 
   return (
     <div className="page">
-      <div className="page-title">Input Data</div>
-      <div className="page-desc">Log inventory by speaking, typing, photographing a bill, or uploading a spreadsheet.</div>
+      <div className="page-title">{t.input_title}</div>
+      <div className="page-desc">{t.input_desc}</div>
 
       <div className="tabs">
-        {[['voice','🎙 Voice'],['text','✏ Text'],['photo','📷 Photo'],['csv','📄 Spreadsheet']].map(([id, lbl]) => (
+        {[['voice', t.input_tab_voice], ['text', t.input_tab_text], ['photo', t.input_tab_photo], ['csv', t.input_tab_sheet]].map(([id, lbl]) => (
           <button key={id} className={`tab${tab===id?' active':''}`} onClick={() => { setTab(id); reset() }}>{lbl}</button>
         ))}
       </div>
@@ -111,30 +111,32 @@ export default function InputData() {
       {tab === 'voice' && (
         <div>
           <div className="card" style={{ marginBottom: 18 }}>
-            <div style={{ fontWeight: 600, marginBottom: 6, fontSize: 14 }}>Speak your transactions in English or Tamil</div>
+            <div style={{ fontWeight: 700, marginBottom: 6, fontSize: 14 }}>{t.input_voice_title}</div>
             <div style={{ fontSize: 13, color: 'var(--text2)', lineHeight: 1.8 }}>
-              <span style={{ color: 'var(--purple)', fontStyle: 'italic' }}>"Sold 20 Parle-G, restocked 100 Amul milk"</span><br />
-              <span style={{ color: 'var(--purple)', fontStyle: 'italic' }}>"10 packet Maggi sold, 5 kg atta restocked"</span>
+              <span style={{ color: 'var(--purple)', fontStyle: 'italic' }}>{t.input_voice_ex1}</span><br />
+              <span style={{ color: 'var(--purple)', fontStyle: 'italic' }}>{t.input_voice_ex2}</span>
             </div>
           </div>
           <div style={{ display: 'flex', gap: 14, alignItems: 'center', marginBottom: 16 }}>
             <button
               onClick={listening ? () => { recRef.current?.stop(); setListening(false) } : startVoice}
-              style={{ width: 60, height: 60, borderRadius: '50%', border: 'none', fontSize: 24, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-                background: listening ? 'rgba(248,113,113,0.15)' : 'rgba(124,110,240,0.15)',
-                color: listening ? 'var(--red)' : 'var(--purple)',
+              style={{
+                width: 64, height: 64, borderRadius: '50%', border: 'none', fontSize: 26,
+                cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+                background: listening ? 'linear-gradient(135deg,#fca5a5,#f87171)' : 'linear-gradient(135deg,#ede9fe,#c4b5fd)',
+                color: listening ? 'white' : 'var(--purple)',
                 animation: listening ? 'vring 1.5s infinite' : 'none',
-                boxShadow: listening ? '0 0 0 0 rgba(248,113,113,0.3)' : 'none'
+                boxShadow: listening ? '0 5px 0 rgba(220,38,38,0.25)' : '0 5px 0 rgba(99,102,241,0.2)',
               }}
             >🎙</button>
             <div>
-              <div style={{ fontWeight: 700, fontSize: 14 }}>{listening ? '● Listening...' : 'Tap to speak'}</div>
-              <div style={{ fontSize: 12, color: 'var(--text3)' }}>{listening ? 'Speak clearly, then stop' : 'English / Tamil supported'}</div>
+              <div style={{ fontWeight: 700, fontSize: 14, color: 'var(--text)' }}>{listening ? t.input_voice_listening : t.input_voice_tap}</div>
+              <div style={{ fontSize: 12, color: 'var(--text3)' }}>{listening ? t.input_voice_speak_clearly : t.input_voice_supported}</div>
             </div>
           </div>
           {text && <div className="card" style={{ fontStyle: 'italic', color: 'var(--text2)', fontSize: 13, marginBottom: 12 }}>"{text}"</div>}
-          {loading && <div className="loading-row"><div className="spinner" /><span>Parsing with Gemma AI...</span></div>}
-          {items && <ParsedTable items={items} />}
+          {loading && <div className="loading-row"><div className="spinner" /><span>{t.input_parsing}</span></div>}
+          {items && <ParsedTable items={items} t={t} />}
         </div>
       )}
 
@@ -142,14 +144,14 @@ export default function InputData() {
       {tab === 'text' && (
         <div>
           <div className="form-group" style={{ marginBottom: 14 }}>
-            <label className="form-label">Type in plain language (English or Tamil)</label>
+            <label className="form-label">{t.input_text_label}</label>
             <textarea className="textarea" rows={4} value={text} onChange={e => setText(e.target.value)}
-              placeholder="e.g. Sold 20 kg rice, restocked 50 litre oil from distributor, sold 5 soap bars..." />
+              placeholder={t.input_text_placeholder} />
           </div>
           <button className="btn btn-primary" onClick={() => parseText(text, 'text')} disabled={!text.trim() || loading}>
-            {loading ? <><div className="spinner" style={{ width: 14, height: 14 }} />Parsing...</> : 'Parse with Gemma AI'}
+            {loading ? <><div className="spinner" style={{ width: 14, height: 14 }} />{t.input_parsing}</> : t.input_parse_btn}
           </button>
-          {items && <ParsedTable items={items} />}
+          {items && <ParsedTable items={items} t={t} />}
         </div>
       )}
 
@@ -164,14 +166,14 @@ export default function InputData() {
             onDragLeave={() => setDragover(false)}
             onDrop={e => { e.preventDefault(); setDragover(false); const f = e.dataTransfer.files[0]; if (f) handleImage(f) }}
           >
-            <div style={{ fontSize: 36, marginBottom: 8 }}>📷</div>
-            <div style={{ fontWeight: 500, color: 'var(--text2)' }}>Upload receipt, bill, or shelf photo</div>
-            <div style={{ fontSize: 12, color: 'var(--text3)', marginTop: 4 }}>Gemma 4 vision extracts all items · JPG, PNG, WebP</div>
+            <div style={{ fontSize: 40, marginBottom: 8 }}>📷</div>
+            <div style={{ fontWeight: 600, color: 'var(--text2)' }}>{t.input_photo_drop}</div>
+            <div style={{ fontSize: 12, color: 'var(--text3)', marginTop: 4 }}>{t.input_photo_sub}</div>
             <input ref={imgRef} type="file" accept="image/*" style={{ display: 'none' }}
               onChange={e => { const f = e.target.files[0]; if (f) handleImage(f) }} />
           </div>
-          {loading && <div className="loading-row"><div className="spinner" /><span>Analyzing with Gemma 4 vision...</span></div>}
-          {items && <ParsedTable items={items} />}
+          {loading && <div className="loading-row"><div className="spinner" /><span>{t.input_analyzing}</span></div>}
+          {items && <ParsedTable items={items} t={t} />}
         </div>
       )}
 
@@ -186,16 +188,16 @@ export default function InputData() {
             onDragLeave={() => setDragover(false)}
             onDrop={e => { e.preventDefault(); setDragover(false); const f = e.dataTransfer.files[0]; if (f) handleImport(f) }}
           >
-            <div style={{ fontSize: 36, marginBottom: 8 }}>📄</div>
-            <div style={{ fontWeight: 500, color: 'var(--text2)' }}>Upload CSV or Excel</div>
-            <div style={{ fontSize: 12, color: 'var(--text3)', marginTop: 4 }}>Columns: item, qty, type (sale/restock), date · Auto-detected</div>
+            <div style={{ fontSize: 40, marginBottom: 8 }}>📄</div>
+            <div style={{ fontWeight: 600, color: 'var(--text2)' }}>{t.input_sheet_drop}</div>
+            <div style={{ fontSize: 12, color: 'var(--text3)', marginTop: 4 }}>{t.input_sheet_sub}</div>
             <input ref={fileRef} type="file" accept=".csv,.xlsx,.xls" style={{ display: 'none' }}
               onChange={e => { const f = e.target.files[0]; if (f) handleImport(f) }} />
           </div>
-          {loading && <div className="loading-row"><div className="spinner" /><span>Importing...</span></div>}
+          {loading && <div className="loading-row"><div className="spinner" /><span>{t.input_importing}</span></div>}
           {importRes && (importRes.success
-            ? <div className="alert alert-success">✓ Imported {importRes.count} records.</div>
-            : <div className="alert alert-error">Failed: {importRes.error}</div>
+            ? <div className="alert alert-success">{t.input_imported(importRes.count)}</div>
+            : <div className="alert alert-error">{importRes.error}</div>
           )}
         </div>
       )}
