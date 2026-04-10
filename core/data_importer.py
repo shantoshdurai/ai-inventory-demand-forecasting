@@ -3,14 +3,23 @@ from core.stock_tracker import log_transaction
 
 def process_uploaded_file(uploaded_file):
     """
-    Reads a CSV or Excel file, auto-detects columns, 
+    Reads a CSV or Excel file (file object or BytesIO), auto-detects columns,
     and logs the corresponding transactions.
     """
     try:
-        if uploaded_file.name.endswith('.csv'):
+        name = getattr(uploaded_file, 'name', '') or ''
+        if name.endswith('.csv'):
             df = pd.read_csv(uploaded_file)
-        else:
+        elif name.endswith(('.xlsx', '.xls')):
             df = pd.read_excel(uploaded_file)
+        else:
+            # Try CSV first, then Excel
+            try:
+                uploaded_file.seek(0)
+                df = pd.read_csv(uploaded_file)
+            except Exception:
+                uploaded_file.seek(0)
+                df = pd.read_excel(uploaded_file)
             
         columns = df.columns.str.lower()
         
