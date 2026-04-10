@@ -85,6 +85,10 @@ html, body { background: var(--bg); color: var(--text); font-family: var(--sans)
 .panel-subtitle { font-size: 11px; color: var(--text3); }
 .panel-close { width: 26px; height: 26px; border-radius: 6px; border: none; background: transparent; color: var(--text3); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 16px; transition: all 0.15s; }
 .panel-close:hover { background: rgba(255,255,255,0.07); color: var(--text); }
+.panel-lang-pills { display: flex; gap: 4px; align-items: center; margin-right: 6px; }
+.lang-pill { padding: 3px 8px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.12); background: transparent; color: var(--text3); font-size: 10.5px; cursor: pointer; transition: all 0.15s; white-space: nowrap; font-family: var(--sans); }
+.lang-pill:hover { border-color: var(--purple); color: var(--text); }
+.lang-pill.active { background: rgba(124,110,240,0.18); border-color: var(--purple); color: var(--purple); font-weight: 600; }
 
 .panel-chips { padding: 10px 12px; border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 6px; flex-shrink: 0; }
 .chip { padding: 4px 10px; border-radius: 20px; font-size: 11.5px; font-weight: 500; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text2); cursor: pointer; transition: all 0.15s; font-family: var(--sans); }

@@ -129,10 +129,33 @@ Voice text: "{transcribed_text}"
         return [{"error": f"Could not parse AI response: {e}"}]
 
 
-def chat_with_advisor(user_message, inventory_context, chat_history=None):
+LANGUAGE_INSTRUCTIONS = {
+    "English": (
+        "LANGUAGE: Always respond in English only. "
+        "Do not use Hindi, Tamil, or any other language, even if the user writes in another language. "
+        "You may recognize Hindi/Tamil input but always reply in English."
+    ),
+    "Hindi": (
+        "LANGUAGE: Always respond in Hindi (Devanagari script). "
+        "You may mix common English business/inventory terms but write sentences in Hindi. "
+        "Example style: 'Aapke paas Toor Dal ka stock sirf 5 din ke liye bacha hai.'"
+    ),
+    "Tamil": (
+        "LANGUAGE: Always respond in Tamil (Tamil script). "
+        "You may use English inventory/business terms where natural, but reply in Tamil. "
+        "Example style: 'உங்கள் Toor Dal இருப்பு வெறும் 5 நாட்களுக்கு மட்டுமே உள்ளது.'"
+    ),
+}
+
+
+def chat_with_advisor(user_message, inventory_context, chat_history=None, language="English"):
     """AI advisor for Kirana shop business performance and inventory strategy."""
+    lang_instruction = LANGUAGE_INSTRUCTIONS.get(language, LANGUAGE_INSTRUCTIONS["English"])
+
     system_prompt = f"""You are StockSense AI — an expert business advisor for Kirana shops (Indian grocery/general stores).
-You speak in a friendly, practical tone. You can understand Hindi/English mixed questions.
+You speak in a friendly, practical tone.
+
+{lang_instruction}
 
 You have access to the shop's real-time inventory data below. Use it to give specific,
 actionable advice with exact product names and numbers.
@@ -154,7 +177,6 @@ RESPONSE GUIDELINES:
 - Use specific numbers from the inventory data
 - Suggest practical steps the shop owner can take TODAY
 - Use markdown formatting for readability (tables, bold, bullet points)
-- If asked in Hindi/Hinglish, respond in the same style
 - End with a follow-up question to keep the conversation useful
 """
 

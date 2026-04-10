@@ -53,6 +53,7 @@ class ParseVoiceIn(BaseModel):
 class ChatIn(BaseModel):
     message: str
     chat_history: Optional[List[dict]] = None
+    language: Optional[str] = "English"
 
 class ForecastIn(BaseModel):
     product_id: int
@@ -209,7 +210,7 @@ async def ai_parse_image(file: UploadFile = File(...)):
 @app.post("/api/ai/chat")
 def ai_chat(body: ChatIn):
     context = get_inventory_summary_text()
-    response = chat_with_advisor(body.message, context, body.chat_history)
+    response = chat_with_advisor(body.message, context, body.chat_history, language=body.language or "English")
     return {"response": response}
 
 @app.get("/api/ai/performance")

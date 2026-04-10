@@ -29,7 +29,7 @@ export const api = {
     return req('/import/file', { method: 'POST', body: fd })
   },
 
-  chat: (message, chat_history) => req('/ai/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message, chat_history }) }),
+  chat: (message, chat_history, language = 'English') => req('/ai/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message, chat_history, language }) }),
   performance: () => req('/ai/performance'),
 
   forecast: (body) => req('/forecast', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }),

@@ -10,6 +10,18 @@ const CHIPS = [
   'Slow movers?',
 ]
 
+const LANGUAGES = [
+  { code: 'English', label: 'English', flag: '🇬🇧' },
+  { code: 'Tamil', label: 'தமிழ்', flag: '🇮🇳' },
+  { code: 'Hindi', label: 'हिंदी', flag: '🇮🇳' },
+]
+
+const WELCOME = {
+  English: "Hello! 👋 I'm your StockSense AI advisor. Ask me anything about your inventory, restocking, or business performance. You can also send a photo of a bill or receipt and I'll analyze it.",
+  Tamil: "வணக்கம்! 👋 நான் உங்கள் StockSense AI ஆலோசகர். உங்கள் சரக்கு, மீண்டும் இருப்பு நிரப்புதல் அல்லது வணிக செயல்திறன் பற்றி என்னிடம் கேளுங்கள். பில் அல்லது ரசீது புகைப்படத்தையும் அனுப்பலாம்.",
+  Hindi: "नमस्ते! 👋 मैं आपका StockSense AI सलाहकार हूं। अपनी इन्वेंटरी, रीस्टॉकिंग या बिजनेस परफॉर्मेंस के बारे में कुछ भी पूछें। आप बिल या रसीद की फोटो भी भेज सकते हैं।",
+}
+
 function renderMd(text) {
   if (!text) return null
   // Split into paragraphs/sections and render with basic markdown
@@ -36,8 +48,9 @@ function bold(s) {
 }
 
 export default function SidePanel({ open, onClose }) {
+  const [language, setLanguage] = useState('English')
   const [msgs, setMsgs] = useState([
-    { role: 'ai', content: 'Namaste! 👋 I\'m your StockSense AI advisor. Ask me anything about your inventory, restocking, or business performance — in English or Hindi. You can also send a photo of a bill or receipt and I\'ll analyze it.' }
+    { role: 'ai', content: WELCOME['English'] }
   ])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
@@ -48,6 +61,11 @@ export default function SidePanel({ open, onClose }) {
   const recRef = useRef(null)
   const fileRef = useRef(null)
   const inputRef = useRef(null)
+
+  const handleLanguageChange = (lang) => {
+    setLanguage(lang)
+    setMsgs([{ role: 'ai', content: WELCOME[lang] }])
+  }
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -81,7 +99,7 @@ export default function SidePanel({ open, onClose }) {
           response = "I couldn't extract any items from this image. Try a clearer photo of a bill, receipt, or stock register."
         }
       } else {
-        const { response: r } = await api.chat(txt, msgs.filter(m => m.role !== 'system'))
+        const { response: r } = await api.chat(txt, msgs.filter(m => m.role !== 'system'), language)
         response = r
       }
       setMsgs(m => [...m, { role: 'ai', content: response }])
@@ -104,11 +122,13 @@ export default function SidePanel({ open, onClose }) {
     }
   }
 
+  const VOICE_LANG = { English: 'en-IN', Tamil: 'ta-IN', Hindi: 'hi-IN' }
+
   const startVoice = () => {
     const SR = window.SpeechRecognition || window.webkitSpeechRecognition
     if (!SR) { alert('Voice not supported. Please use Chrome.'); return }
     const rec = new SR()
-    rec.lang = 'en-IN'; rec.continuous = false; rec.interimResults = false
+    rec.lang = VOICE_LANG[language] || 'en-IN'; rec.continuous = false; rec.interimResults = false
     rec.onstart = () => setListening(true)
     rec.onresult = e => {
       const t = e.results[0][0].transcript
@@ -138,9 +158,21 @@ export default function SidePanel({ open, onClose }) {
       {/* Header */}
       <div className="panel-header">
         <div className="panel-header-icon">◈</div>
-        <div>
+        <div style={{ flex: 1 }}>
           <div className="panel-title">AI Advisor</div>
-          <div className="panel-subtitle">Gemma 4 · Hindi / English</div>
+          <div className="panel-subtitle">Gemma 4 · {language}</div>
+        </div>
+        <div className="panel-lang-pills">
+          {LANGUAGES.map(l => (
+            <button
+              key={l.code}
+              className={`lang-pill${language === l.code ? ' active' : ''}`}
+              onClick={() => handleLanguageChange(l.code)}
+              title={`Switch to ${l.code}`}
+            >
+              {l.label}
+            </button>
+          ))}
         </div>
         <button className="panel-close" onClick={onClose} title="Close panel">✕</button>
       </div>
@@ -148,7 +180,7 @@ export default function SidePanel({ open, onClose }) {
       {/* Quick chips */}
       <div className="panel-chips">
         {CHIPS.map(c => (
-          <button key={c} className="chip" onClick={() => send(c)}>{c}</button>
+          <button key={c} className="chip" onClick={() => send(c, null)}>{c}</button>
         ))}
       </div>
 
@@ -202,7 +234,7 @@ export default function SidePanel({ open, onClose }) {
         {listening && (
           <div style={{ fontSize: 11, color: 'var(--red)', marginBottom: 5, display: 'flex', alignItems: 'center', gap: 5 }}>
             <span style={{ animation: 'vring 1s infinite', display: 'inline-block', width: 6, height: 6, borderRadius: '50%', background: 'var(--red)' }} />
-            Listening in Hindi / English...
+            Listening in {language}...
           </div>
         )}
         <div className="panel-input-row">
