@@ -111,10 +111,10 @@ export default function InputData() {
       {tab === 'voice' && (
         <div>
           <div className="card" style={{ marginBottom: 18 }}>
-            <div style={{ fontWeight: 600, marginBottom: 6, fontSize: 14 }}>Speak your transactions in Hindi or English</div>
+            <div style={{ fontWeight: 600, marginBottom: 6, fontSize: 14 }}>Speak your transactions in English or Tamil</div>
             <div style={{ fontSize: 13, color: 'var(--text2)', lineHeight: 1.8 }}>
-              <span style={{ color: 'var(--purple)', fontStyle: 'italic' }}>"Aaj 10 packet Maggi becha aur 5 kg atta aaya"</span><br />
-              <span style={{ color: 'var(--purple)', fontStyle: 'italic' }}>"Sold 20 Parle-G, restocked 100 Amul milk"</span>
+              <span style={{ color: 'var(--purple)', fontStyle: 'italic' }}>"Sold 20 Parle-G, restocked 100 Amul milk"</span><br />
+              <span style={{ color: 'var(--purple)', fontStyle: 'italic' }}>"10 packet Maggi sold, 5 kg atta restocked"</span>
             </div>
           </div>
           <div style={{ display: 'flex', gap: 14, alignItems: 'center', marginBottom: 16 }}>
@@ -129,7 +129,7 @@ export default function InputData() {
             >🎙</button>
             <div>
               <div style={{ fontWeight: 700, fontSize: 14 }}>{listening ? '● Listening...' : 'Tap to speak'}</div>
-              <div style={{ fontSize: 12, color: 'var(--text3)' }}>{listening ? 'Speak clearly, then stop' : 'Hindi / English supported'}</div>
+              <div style={{ fontSize: 12, color: 'var(--text3)' }}>{listening ? 'Speak clearly, then stop' : 'English / Tamil supported'}</div>
             </div>
           </div>
           {text && <div className="card" style={{ fontStyle: 'italic', color: 'var(--text2)', fontSize: 13, marginBottom: 12 }}>"{text}"</div>}
@@ -142,9 +142,9 @@ export default function InputData() {
       {tab === 'text' && (
         <div>
           <div className="form-group" style={{ marginBottom: 14 }}>
-            <label className="form-label">Type in plain language (English or Hindi)</label>
+            <label className="form-label">Type in plain language (English or Tamil)</label>
             <textarea className="textarea" rows={4} value={text} onChange={e => setText(e.target.value)}
-              placeholder="e.g. 20 kg chawal becha, 50 liter tel aaya distributor se, sold 5 soap bars..." />
+              placeholder="e.g. Sold 20 kg rice, restocked 50 litre oil from distributor, sold 5 soap bars..." />
           </div>
           <button className="btn btn-primary" onClick={() => parseText(text, 'text')} disabled={!text.trim() || loading}>
             {loading ? <><div className="spinner" style={{ width: 14, height: 14 }} />Parsing...</> : 'Parse with Gemma AI'}
